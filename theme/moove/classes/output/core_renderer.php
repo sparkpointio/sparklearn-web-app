@@ -326,7 +326,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         if (!isloggedin()) {
             $returnstr = '';
             if (!$loginpage) {
-                $returnstr .= "<a class='btn btn-login-top' href=\"$loginurl\">" . get_string('login') . '</a>';
+                $returnstr .= "<a class='btn btn-login-top' href=\"$loginurl\">" . get_string('login') . "</a><a href='https://earn.sparkpoint.io/register' target='_blank'><button class='btn btn-login-top' style='border-radius:12px;'>REGISTER</BUTTON></a>";
             }
 
             $theme = theme_config::load('moove');
