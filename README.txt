@@ -26,6 +26,3 @@ Moodle is written in PHP and JavaScript and uses an SQL database for storing
 the data.
 
 See <https://docs.moodle.org> for details of Moodle's many features.
-
-
-// sparklearn-web-app
