@@ -31,6 +31,7 @@ $templatecontext = [
     // installation. At that stage database tables do not exist yet.
     'sitename' => format_string($SITE->shortname, true, ["escape" => false]),
     'bodyattributes' => $bodyattributes,
+    'maintenance' => $OUTPUT->image_url('under-maintenance', 'theme'),
     'output' => $OUTPUT
 ];
 

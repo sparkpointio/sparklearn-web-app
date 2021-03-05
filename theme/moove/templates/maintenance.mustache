@@ -45,26 +45,12 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
-<body {{{ bodyattributes }}}>
+<body style="margin-left:0px!important;">
 
 <div id="page-wrapper">
-
-    {{{ output.standard_top_of_body_html }}}
-
-    <div id="page" class="container card card-block">
-
-        <div class="row">
-            <div class="col-12 py-3">
-                {{{ output.page_heading }}}
-            </div>
-        </div>
-
-        <div id="page-content" class="row">
-            <section id="region-main" class="col-12" aria-label="{{#str}}content{{/str}}">
-                {{{ output.main_content }}}
-            </section>
-        </div>
-
+    <div id="page" class="container-fluid ml-0 mr-0 pl-0 pr-0 pt-0 pb-0 mt-0">          
+        <img src="{{{maintenance}}}">
+        {{{ output.main_content }}}
     </div>
 </div>
 
@@ -75,3 +61,4 @@
 {{#js}}
 require(['theme_boost/loader']);
 {{/js}}
+
