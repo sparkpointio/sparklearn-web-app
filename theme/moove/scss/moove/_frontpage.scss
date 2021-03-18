@@ -533,3 +533,31 @@ body.notloggedin {
     border-radius:14px!important;
     padding: 10px 10px;
 }
+
+.sign-up-btn {
+    text-align:center;
+}
+
+body.notloggedin #loginbox .sign-up-btn .btn {
+    padding: 3px 10px!important;
+}
+.cus-btn-primary {
+    border-radius:14px!important;
+    width: 28rem;
+}
+
+.cus-btn-secondary {
+    border-radius:14px!important;
+}
+
+.cus-input {
+    border-radius:0px 15px 15px 0px!important;
+}
+
+.br-left {
+    border-radius:15px 0px 0px 15px!important;
+}
+
+.text-center {
+    text-align: center;
+}
