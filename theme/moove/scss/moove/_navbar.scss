@@ -17,7 +17,6 @@ nav.navbar {
         background-color: $navbar-bg;
 
         .nav-link {
-            color: #fff;
             border: none;
             background-color: initial;
         }
@@ -102,8 +101,24 @@ nav.navbar {
     }
 
     .custom-menus {
+        // custom menu css
+        color: white!important;
+        background-color: #1b5f86;
+        padding: 44px 1px 6px 25px;
+        margin-bottom: 32px;
+        border-radius: 18px;
+
         .nav-item {
-            padding-left: .75rem;
+            padding: 0px;
+            transition: .5s;
+        }
+
+        .nav-item:hover {
+            padding: 0px 11px 0px 11px;
+            background-color: #e15626;
+            transition: .5s;
+            border-radius: 4px;
+            text-decoration: none;
         }
     }
 
@@ -350,4 +365,10 @@ nav.navbar {
             padding-top: 10px;
         }
     }
+}
+
+
+nav.navbar ul.navbar-nav li > a {
+    color: #fff!important;
+    text-decoration: none;
 }
