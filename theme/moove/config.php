@@ -125,6 +125,9 @@ $THEME->layouts = [
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true),
     ),
+    'customnav' => array(
+        'file' => 'custom_nav.php'
+    ), 
     // Server administration scripts.
     'admin' => array(
         'file' => 'columns2.php',
