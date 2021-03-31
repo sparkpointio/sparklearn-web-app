@@ -132,7 +132,8 @@ if (isloggedin()) {
         'sponsorsfrontpage' => $sponsorsfrontpage,
         'clientsfrontpage' => $clientsfrontpage,
         'disablefrontpageloginbox' => $disablefrontpageloginbox,
-        'logintoken' => \core\session\manager::get_login_token()
+        'logintoken' => \core\session\manager::get_login_token(),
+        'error' => $_SESSION['error']
     ];
 
     $templatecontext = array_merge($templatecontext, $themesettings->footer_items(), $themesettings->marketing_items());

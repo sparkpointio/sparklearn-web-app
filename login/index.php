@@ -26,7 +26,7 @@
 
 require('../config.php');
 require_once('lib.php');
-
+unset($_SESSION['error']);
 redirect_if_major_upgrade_required();
 
 $testsession = optional_param('testsession', 0, PARAM_INT); // test session works properly
@@ -63,6 +63,8 @@ if ($testsession) {
             $urltogo = $CFG->wwwroot.'/';
         }
         unset($SESSION->wantsurl);
+        unset($_SESSION['error']);
+
         redirect($urltogo);
     } else {
         // TODO: try to find out what is the exact reason why sessions do not work
@@ -75,6 +77,8 @@ if ($testsession) {
 if (!empty($SESSION->has_timed_out)) {
     $session_has_timed_out = true;
     unset($SESSION->has_timed_out);
+    unset($_SESSION['error']);
+
 } else {
     $session_has_timed_out = false;
 }
@@ -96,7 +100,7 @@ $site = get_site();
 // Ignore any active pages in the navigation/settings.
 // We do this because there won't be an active page there, and by ignoring the active pages the
 // navigation and settings won't be initialised unless something else needs them.
-$PAGE->navbar->ignore_active();
+// $PAGE->navbar->ignore_active();
 $loginsite = get_string("loginsite");
 $PAGE->navbar->add($loginsite);
 
@@ -175,10 +179,14 @@ if ($frm and isset($frm->username)) {                             // Login WITH 
         if (isguestuser($user)) {
             // no predefined language for guests - use existing session or default site lang
             unset($user->lang);
+            unset($_SESSION['error']);
+
 
         } else if (!empty($user->lang)) {
             // unset previous session language - use user preference instead
             unset($SESSION->lang);
+            unset($_SESSION['error']);
+            
         }
 
         if (empty($user->confirmed)) {       // This account was never confirmed
@@ -269,6 +277,8 @@ if ($frm and isset($frm->username)) {                             // Login WITH 
 
         // Discard any errors before the last redirect.
         unset($SESSION->loginerrormsg);
+        unset($_SESSION['error']);
+
 
         // test the session actually works by redirecting to self
         $SESSION->wantsurl = $urltogo;
@@ -345,17 +355,22 @@ if (empty($frm->username) && $authsequence[0] != 'shibboleth') {  // See bug 518
 
 if (!empty($SESSION->loginerrormsg)) {
     // We had some errors before redirect, show them now.
+
     $errormsg = $SESSION->loginerrormsg;
+    // echo $errormsg;
+    $_SESSION['error'] = $errormsg;
+
     unset($SESSION->loginerrormsg);
 
 } else if ($testsession) {
     // No need to redirect here.
-    unset($SESSION->loginerrormsg);
 
 } else if ($errormsg or !empty($frm->password)) {
     // We must redirect after every password submission.
     if ($errormsg) {
+        
         $SESSION->loginerrormsg = $errormsg;
+        
     }
     redirect(new moodle_url('/login/index.php'));
 }
