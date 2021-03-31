@@ -26,6 +26,12 @@
     }
 }}
 <div class="card-body">
+    {{#error}}
+        <div class="loginerrors text-center">
+            <a href="#" id="loginerrormessage" class="accesshide">{{error}}</a>
+            <div class="alert alert-danger" role="alert">{{error}}</div>
+        </div>
+    {{/error}}
     <h3>{{#str}}platform_access, theme_moove{{/str}}</h3>
     <h5>{{#str}}platform_access_subtext, theme_moove{{/str}}</h5>
     <form class="signup-form" action="{{{ config.wwwroot }}}/login/index.php" method="POST" role="form">
