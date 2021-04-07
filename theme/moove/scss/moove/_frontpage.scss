@@ -571,3 +571,11 @@ body.notloggedin #loginbox #intro h2.text-small {
 div {
     scroll-behavior: smooth;
 }
+
+@media (min-width:320px) and (max-width:520px) {
+    body.notloggedin #loginbox #intro h2.text-small {
+        font-size: 0.4rem;
+        color: black!important;
+        margin-right: 0rem!important;
+    }
+}
