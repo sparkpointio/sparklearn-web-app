@@ -565,6 +565,8 @@ body.notloggedin #loginbox #intro h2.text-small {
     font-size: 1rem;
     color: black!important;
     margin-right: 16.4rem!important;
+    line-height: 1.5rem;
+
 }
 
 div {
@@ -577,6 +579,7 @@ div {
         color: black!important;
         margin-right: 0rem!important;
         max-width: 100%;
+        line-height: 0.7rem;
     }
     .img-custom-fluid {
         width: 7.3rem;
