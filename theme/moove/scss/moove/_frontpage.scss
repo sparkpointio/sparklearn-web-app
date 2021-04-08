@@ -527,3 +527,62 @@ body.notloggedin {
         }
     }
 }
+
+// custom scss
+#boxForm {
+    border-radius:14px!important;
+    padding: 10px 10px;
+}
+
+.sign-up-btn {
+    text-align:center;
+}
+
+body.notloggedin #loginbox .sign-up-btn .btn {
+    padding: 3px 10px!important;
+}
+.cus-btn-primary {
+    border-radius:14px!important;
+}
+
+.cus-btn-secondary {
+    border-radius:14px!important;
+}
+
+.cus-input {
+    border-radius:0px 15px 15px 0px!important;
+}
+
+.br-left {
+    border-radius:15px 0px 0px 15px!important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body.notloggedin #loginbox #intro h2.text-small {
+    font-size: 1rem;
+    color: black!important;
+    margin-right: 16.4rem!important;
+    line-height: 1.5rem;
+
+}
+
+div {
+    scroll-behavior: smooth;
+}
+
+@media (min-width:320px) and (max-width:520px) {
+    body.notloggedin #loginbox #intro h2.text-small {
+        font-size: 0.6rem;
+        color: black!important;
+        margin-right: 0rem!important;
+        max-width: 100%;
+        line-height: 0.7rem;
+    }
+    .img-custom-fluid {
+        width: 7.3rem;
+    }
+    // body.notloggedin #loginbox #intro h2 
+}

@@ -25,7 +25,7 @@
         "canloginasguest": true
     }
 }}
-<div class="card-body">
+<div class="card-body rounded">
     <h3>{{#str}}platform_access, theme_moove{{/str}}</h3>
     <h5>{{#str}}platform_access_subtext, theme_moove{{/str}}</h5>
     <form class="signup-form" action="{{{ config.wwwroot }}}/login/index.php" method="POST" role="form">
@@ -36,18 +36,18 @@
             {{/canloginbyemail}}
         </label>
         <div class="input-group">
-            <div class="input-group-addon"><i class="fa fa-envelope add-on"></i></div>
-            <input type="text" class="form-control" id="username" name="username" placeholder="{{#str}}usernameemail{{/str}}" required />
+            <div class="input-group-addon br-left"><i class="fa fa-envelope add-on"></i></div>
+            <input type="text" class="form-control cus-input" id="username" name="username" placeholder="{{#str}}usernameemail{{/str}}" required />
         </div>
 
         <label for="password">{{#str}}password{{/str}}</label>
         <div class="input-group">
-            <div class="input-group-addon"><i class="fa fa-lock add-on"></i></div>
-            <input type="password" class="form-control" id="password" name="password" placeholder="{{#str}}password{{/str}}" required />
+            <div class="input-group-addon br-left"><i class="fa fa-lock add-on"></i></div>
+            <input type="password" class="form-control cus-input" id="password" name="password" placeholder="{{#str}}password{{/str}}" required />
         </div>
 
         <div class="sign-up-btn">
-            <button type="submit" class="btn btn-primary">{{#str}}login{{/str}}</button>
+            <button type="submit" class="btn btn-primary btn-block cus-btn-primary">{{#str}}login{{/str}}</button>
         </div>
     </form>
 
@@ -67,7 +67,7 @@
         </div>
     {{/output.has_identity_providers}}
 
-    <p class="my-2"><a href="{{{ config.wwwroot }}}/login/forgot_password.php">{{#str}}forgotten{{/str}}</a></p>
+    <p class="my-2 text-center"><a href="{{{ config.wwwroot }}}/login/forgot_password.php">{{#str}}forgotten{{/str}}</a></p>
 
     {{#cansignup}}
         <a class="btn btn-register btn-primary" href="{{{ config.wwwroot }}}/login/signup.php?">{{#str}}newaccount{{/str}}</a>
@@ -78,13 +78,13 @@
             <input type="hidden" name="username" value="guest" />
             <input type="hidden" name="password" value="guest" />
             <input type="hidden" name="logintoken" value="{{logintoken}}">
-            <button class="btn btn-default btn-block mt-2" type="submit">{{#str}}loginguest{{/str}}</button>
+            <button class="btn btn-default btn-block mt-2 cus-btn-secondary" type="submit">{{#str}}loginguest{{/str}}</button>
         </form>
     {{/canloginasguest}}
     <a 
     href="https://earn.sparkpoint.io/register"
     target="_blank"
     style="text-decoration:none;">
-    <button class="btn btn-success btn-block mt-2">REGISTER NOW</button>
+    <button class="btn btn-success btn-block mt-2 cus-btn-secondary">REGISTER NOW</button>
     </a>
 </div>
