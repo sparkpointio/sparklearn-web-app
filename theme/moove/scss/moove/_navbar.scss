@@ -113,16 +113,6 @@ nav.navbar {
             padding: 0px;
             transition: .5s;
         }
-    
-        .nav-item:hover {
-            color: #fff;
-            padding: 8px 19px 8px 19px;
-            background-color: #e46d2e;
-            transition: .5s;
-            border-radius: 4px;
-            text-decoration: none;
-            box-shadow: 0 0 8px #e15309;
-        }
     }
     
 
@@ -135,6 +125,17 @@ nav.navbar {
                 text-decoration: none;
                 color: #585757;
                 font-weight: 900;
+                transition: .5s;
+            }
+
+            a:hover {
+                color: #fff;
+                padding: 8px 19px 8px 19px;
+                background-color: #e66d2c;
+                transition: .5s;
+                border-radius: 4px;
+                text-decoration: none;
+                box-shadow: 0 0 8px #e15309;
             }
 
             a.new-btn {
@@ -145,6 +146,14 @@ nav.navbar {
                 border-radius: 4px;
                 text-decoration: none;
                 box-shadow: 0 0 8px #e15309;
+            }
+
+            a.new-btn:hover {
+                color: #fff;
+                padding: 8px 19px 8px 19px;
+                background-color: #f8981d;
+                box-shadow: 0 0 8px #e15309;
+                transition: .5s;
             }
 
             .nav-link {
