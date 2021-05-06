@@ -104,6 +104,8 @@
         padding: 0 4rem;
     }
 
+    
+  
     .primary-btn{
         color: #fff;
         border: none;
@@ -133,7 +135,15 @@
 
     .arrow-icon {
         margin-top: 20px;
+        animation: Pulsate 2s linear infinite;
     }
+
+    @keyframes Pulsate {
+        from { opacity: 1; }
+        50% { opacity: 0; }
+        to { opacity: 1; }
+      }
+  
     .frontpage-marketing {
         margin: -4rem 0 0 0;
         padding: 2rem 0;
