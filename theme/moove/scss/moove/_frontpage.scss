@@ -112,6 +112,18 @@
         border-radius: 8px;
         background-color: #e15309;
         box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
+
+    .primary-btn:hover {
+        color: #fff;
+        border: none;
+        margin-top: 2.2rem;
+        padding: 9px 17px;
+        border-radius: 8px;
+        background-color: #f8981d;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
     }
 
     .headers-footer {
