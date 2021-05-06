@@ -144,6 +144,7 @@ nav.navbar {
                 background-color: #e15309;
                 transition: .5s;
                 border-radius: 4px;
+                font-weight: 100;
                 text-decoration: none;
                 box-shadow: 0 0 8px #e15309;
             }
@@ -151,6 +152,7 @@ nav.navbar {
             a.new-btn:hover {
                 color: #fff;
                 padding: 8px 19px 8px 19px;
+                font-weight: 900;
                 background-color: #f8981d;
                 box-shadow: 0 0 8px #e15309;
                 transition: .5s;
