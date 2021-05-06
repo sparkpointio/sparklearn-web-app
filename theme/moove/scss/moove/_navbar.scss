@@ -102,10 +102,29 @@ nav.navbar {
     }
 
     .custom-menus {
+        // custom menu css
+        color: #414141!important;
+        padding: 44px 1px 6px 25px;
+        margin-bottom: 32px;
+        border-radius: 18px;
+    
         .nav-item {
-            padding-left: .75rem;
+            color:white!important;
+            padding: 0px;
+            transition: .5s;
+        }
+    
+        .nav-item:hover {
+            color: #fff;
+            padding: 8px 19px 8px 19px;
+            background-color: #e46d2e;
+            transition: .5s;
+            border-radius: 4px;
+            text-decoration: none;
+            box-shadow: 0 0 8px #e15309;
         }
     }
+    
 
     ul.navbar-nav {
         li,
@@ -114,7 +133,18 @@ nav.navbar {
 
             > a {
                 text-decoration: none;
-                color: $brand-primary;
+                color: #585757;
+                font-weight: 900;
+            }
+
+            a.new-btn {
+                color: #fff;
+                padding: 8px 19px 8px 19px;
+                background-color: #e15309;
+                transition: .5s;
+                border-radius: 4px;
+                text-decoration: none;
+                box-shadow: 0 0 8px #e15309;
             }
 
             .nav-link {
@@ -129,6 +159,8 @@ nav.navbar {
                 }
             }
         }
+
+
 
         .popover-region {
             margin-right: 0;
