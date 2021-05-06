@@ -120,6 +120,7 @@ if (isloggedin()) {
     $templatecontext = [
         'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
         'output' => $OUTPUT,
+        'subheader' => $OUTPUT->image_url('subheader', 'theme'),
         'bodyattributes' => $bodyattributes,
         'hasdrawertoggle' => false,
         'canloginasguest' => $CFG->guestloginbutton and !isguestuser(),
