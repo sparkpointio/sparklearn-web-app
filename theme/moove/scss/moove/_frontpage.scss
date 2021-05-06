@@ -94,16 +94,33 @@
         opacity: 0;
         visibility: hidden;
     }
-
+    
     #page-header {
         background-position: left top;
         background-repeat: no-repeat;
         background-color: #fff;
         background-size: 100%;
-        min-height: 540px;
+        min-height: 724px;
         padding: 0 4rem;
     }
 
+    .primary-btn {
+        color: #fff;
+        border: none;
+        margin-top: 2.2rem;
+        padding: 9px 17px;
+        border-radius: 8px;
+        background-color: #e15309;
+        box-shadow: 0 0 8px #e15309;
+    }
+
+    .headers-footer {
+        margin-top: 6.4rem;
+    }
+
+    .arrow-icon {
+        margin-top: 20px;
+    }
     .frontpage-marketing {
         margin: -4rem 0 0 0;
         padding: 2rem 0;
@@ -386,6 +403,7 @@ body.notloggedin {
             }
 
             .banner-text {
+                font-size: 2.8rem;
                 color: #000!important;
                 letter-spacing: .2rem;
                 text-shadow: 2px 4px 4px #000;
@@ -394,7 +412,9 @@ body.notloggedin {
             }
 
             .banner-subtext {
-                color: #424344!important;
+                font-size: .9rem;
+                color: #323333 !important;
+                margin-right: 17rem;
             }
 
         }

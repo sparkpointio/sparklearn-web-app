@@ -69,15 +69,15 @@
                             <h1 class="banner-text">Welcome to</h1>
                             <img class="img-fluid" src="{{{subheader}}}">
                             <h2  class="banner-subtext">{{{ bannercontent }}}</h2>
+                            <button class="primary-btn">Register Now</button>
                         {{/bannercontent}}
                     </div>
-                    {{^disablefrontpageloginbox}}
-                        <div class="col-12 col-sm-12 col-md-5 card d-none d-lg-block" id="boxForm">
-                            {{>theme_moove/frontpage_login}}
-                        </div><!-- end of .card-body -->
-                    {{/disablefrontpageloginbox}}
                 </div> <!-- end of #boxForm -->
             {{/sliderenabled}}
+            <div class="text-center headers-footer">
+                <h2>Unlock the world of blockchain and cryptocurrency</h2>
+                <img class="img-fluid arrow-icon" src="{{{arrow-down}}}">
+            </div>
         </div>
 
         {{>theme_moove/frontpage_marketing}}
