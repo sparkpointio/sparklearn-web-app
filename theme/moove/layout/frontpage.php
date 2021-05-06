@@ -121,6 +121,7 @@ if (isloggedin()) {
         'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
         'output' => $OUTPUT,
         'subheader' => $OUTPUT->image_url('subheader', 'theme'),
+        'arrow-down' => $OUTPUT->image_url('arrow-down', 'theme'),
         'bodyattributes' => $bodyattributes,
         'hasdrawertoggle' => false,
         'canloginasguest' => $CFG->guestloginbutton and !isguestuser(),
