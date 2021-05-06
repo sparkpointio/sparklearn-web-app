@@ -368,6 +368,8 @@ body.notloggedin {
         #intro {
             text-align: left;
             color: #fff;
+            margin-left: 8rem;
+            margin-top: 6rem;
 
             h1 {
                 color: #fff;
@@ -382,6 +384,19 @@ body.notloggedin {
                 letter-spacing: .1rem;
                 max-width: 80%;
             }
+
+            .banner-text {
+                color: #000!important;
+                letter-spacing: .2rem;
+                text-shadow: 2px 4px 4px #000;
+                margin-top: 2rem;
+                margin-bottom: 0rem;
+            }
+
+            .banner-subtext {
+                color: #424344!important;
+            }
+
         }
 
         h3 {
