@@ -43,12 +43,14 @@
     </a>
 
     <ul class="navbar-nav d-none d-md-flex custom-menus">
-        {{> theme_moove/flat_navigation }}
-        {{{custom_navigation}}}
-        <!-- custom_menu -->
-        {{>/custom_navigation}}
-        <!-- page_heading_menu -->
-        {{{ output.page_heading_menu }}}
+        <div class="row">
+            {{> theme_moove/flat_navigation }}
+            {{{custom_navigation}}}
+            <!-- custom_menu -->
+            {{>/custom_navigation}}
+            <!-- page_heading_menu -->
+            {{{ output.page_heading_menu }}}
+        </div>
         
         
     </ul>
