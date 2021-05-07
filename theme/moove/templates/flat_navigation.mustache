@@ -55,17 +55,15 @@
         ]
     }
 }}
-
-<div>
-<ul class="navbar-nav">
+<ul class="list-group metismenu">
 {{# flatnavigation }}
     {{#showdivider}}
         </ul>
-        <ul class="navbar-nav">
+        <ul class="list-group metismenu">
     {{/showdivider}}
     {{#action}}
         {{^is_section}}
-                <li class="nav-item mr-4 {{#isactive}}active font-weight-bold{{/isactive}}" data-key="{{key}}">
+                <li class="list-group-item list-group-item-action {{#isactive}}active font-weight-bold{{/isactive}}" data-key="{{key}}">
                     <a href="{{{action}}}">
                         <span class="text m-l-{{get_indent}}">{{{text}}}</span>
                     </a>
@@ -73,8 +71,8 @@
         {{/is_section}}
     {{/action}}
     {{^action}}
-            <li class="nav-item mr-4 dropdown" data-key="{{key}}">
-                <a class="nav-link dropdown-toggle" href="javascript:void(0);">
+            <li class="list-group-item" data-key="{{key}}">
+                <a class="m-l-{{get_indent}} has-arrow" href="javascript:void(0);">
                     {{#is_section}}
                         {{#pix}}i/folder{{/pix}}
                     {{/is_section}}
@@ -83,13 +81,11 @@
                 <ul>
                     {{#children}}
                         {{^is_section}}
-                            <div class="dropdown-menu">
-                                <li class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" data-key="{{key}}">
-                                    <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
-                                        <span class="text">{{{text}}}</span>
-                                    </a>
-                                </li>
-                            </div>
+                            <li class="list-group-item list-group-item-action {{#isactive}}active font-weight-bold{{/isactive}}" data-key="{{key}}">
+                                <a class="list-group-item list-group-item-action {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
+                                    <span class="text">{{{text}}}</span>
+                                </a>
+                            </li>
                         {{/is_section}}
                     {{/children}}
                 </ul>
@@ -97,4 +93,3 @@
     {{/action}}
 {{/ flatnavigation }}
 </ul>
-</div>

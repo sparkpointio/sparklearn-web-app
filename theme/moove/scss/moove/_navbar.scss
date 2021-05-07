@@ -8,14 +8,6 @@ nav.navbar {
     right: 0;
     left: 0;
     z-index: 1030;
-    
-    .active {
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        background-color: #f8981d;
-        box-shadow: 0 0 8px #e15309;
-    }
 
     .drawer-toggle {
         height: 70px;
