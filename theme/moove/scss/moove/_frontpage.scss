@@ -141,6 +141,11 @@
         transition: .5s;
     }
 
+    .marketing-btn:hover{
+        background-color: #f8981d;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
 
     .headers-footer {
         margin-top: 6.4rem;
@@ -167,7 +172,7 @@
             flex-basis: calc(30% - 1rem);
             text-align: center;
             margin: auto;
-            height: 25rem;
+            height: 26rem;
             border-radius: 16px;
 
             img {
