@@ -268,33 +268,7 @@
         padding: 2rem 0;
         height: 40rem;
 
-        .card {
-            flex-basis: calc(30% - 1rem);
-            text-align: center;
-            margin: auto;
-            height: 26rem;
-            border-radius: 16px;
-
-            img {
-              max-width: 100%;
-            }
-
-            h2 {
-                color: #565656;
-                margin: 20px 0;
-            }
-
-            h3 {
-                color: #a4a3a3;
-            }
-
-            p {
-                color: #9f9f9f;
-                margin: 1.5em 0;
-            }
-        }
-
-        .marketing-header {
+        .endorsement-header {
             margin-left: 9rem;
             margin-right: 9rem;
 
@@ -305,30 +279,8 @@
             h2 {
                 color: #38bbe8;
             }
-        }
-
-        .marketing-item-title {
-            h2{
-                color:#9ecce7;
-            }
-        }
-
-        .marketing-item {
-            padding: 0px;
-
-            img {
-                border-radius: 15px;
-            }
-        }
-        
-        .item {
-            width: 100px;
-            padding: 10px;
-            background-color: rgba(111,41,97,.3);
-            border: 2px solid rgba(111,41,97,.5);
-            display: inline-block;
-            vertical-align: middle
-          }
+        }      
+ 
     }
 
     .frontpage-numbers {
