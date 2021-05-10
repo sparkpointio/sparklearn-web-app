@@ -16,46 +16,33 @@
 }}
 {{!
     @template theme_moove/frontpage_endorsement
-
-    Blocks drawer template
-
-    Example context (json): {
-        "shoulddisplaymarketing": true,
-        "marketing1icon": "https://iconurl...",
-        "marketing1heading": "The head title",
-        "marketing1subheading": "The subhead title",
-        "marketing1content": "The content",
-        "marketing1url": "https://marketingurl..."
-    }
 }}
-{{#shoulddisplaymarketing}}
-    <div id="page-endorsement" class="frontpage-endorsement">
-        <div class="container mt-5 pt-3">
-            <div class="marketing-header">
-                <h4 class="text-center">DIVE DEEPER INTO BLOCKCHAIN</h4>
-                <h2 class="text-center ml-auto">BLOCKCHAIN DEVELOPER BOOTCAMP</h2>
+<div id="page-endorsement" class="frontpage-endorsement">
+    <div class="container mt-5 pt-3">
+        <div class="endorsement-header">
+            <h4 class="text-center">DIVE DEEPER INTO BLOCKCHAIN</h4>
+            <h2 class="text-center ml-auto">BLOCKCHAIN DEVELOPER BOOTCAMP</h2>
+        </div>
+        <div class="row mt-5 pt-3">
+            <div class="col-6 text-left text-white mt-4 pt-3">
+                <p>
+                    SparkLearn’s first Blockchain Developer Bootcamp is a 16-week online course focused on teaching the fundamental concepts and key tools in smart contract and decentralized application (DApp) development.
+                </p>
+                <p>
+                    The courses and multi-modal content are prepared by mentors who have industry experience in blockchain technology and cryptocurrency. The online bootcamp will run from August to November 2021.
+                </p>
+                <p>
+                    The program requires 15-20 hours per week where students can set their pace of learning.
+                </p>
             </div>
-            <div class="row mt-5 pt-3">
-                <div class="col-6 text-left text-white mt-4 pt-3">
-                    <p>
-                        SparkLearn’s first Blockchain Developer Bootcamp is a 16-week online course focused on teaching the fundamental concepts and key tools in smart contract and decentralized application (DApp) development.
-                    </p>
-                    <p>
-                        The courses and multi-modal content are prepared by mentors who have industry experience in blockchain technology and cryptocurrency. The online bootcamp will run from August to November 2021.
-                    </p>
-                    <p>
-                        The program requires 15-20 hours per week where students can set their pace of learning.
-                    </p>
-                </div>
-                <div class="col-4">
-                    <img src="{{{bdbcover}}}">
-                </div>
-            </div>
-            <div class="text-center mt-4 pt-2">
-                <a href="https://sparkpoint.io/bootcamp" target="_blank">
-                    <button class="primary-btn-large">Visit the site</button>
-                </a>
+            <div class="col-4">
+                <img src="{{{bdbcover}}}">
             </div>
         </div>
+        <div class="text-center mt-4 pt-2">
+            <a href="https://sparkpoint.io/bootcamp" target="_blank">
+                <button class="primary-btn-large">Visit the site</button>
+            </a>
+        </div>
     </div>
-{{/shoulddisplaymarketing}}
+</div>
