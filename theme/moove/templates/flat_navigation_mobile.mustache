@@ -56,25 +56,20 @@
     }
 }}
 
-<ul class="navbar-nav d-lg-flex d-none">
+
 {{# flatnavigation }}
     {{#showdivider}}
-        </ul>
 <div class="col">
-        <ul class="navbar-nav">
     {{/showdivider}}
     {{#action}}
         {{^is_section}}
-                <li class="nav-item {{#isactive}}active font-weight-bold{{/isactive}}" data-key="{{key}}">
-                    <a href="{{{action}}}">
+                    <a href="{{{action}}}" data-key="{{key}}>
                         <span class="text m-l-{{get_indent}}">{{{text}}}</span>
                     </a>
-                </li>
         {{/is_section}}
     {{/action}}
     {{^action}}
-            <li class="nav-item dropdown" data-key="{{key}}">
-                <a class="nav-link dropdown-toggle" href="javascript:void(0);">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-key="{{key}}>
                     {{#is_section}}
                         {{#pix}}i/folder{{/pix}}
                     {{/is_section}}
@@ -89,8 +84,6 @@
                             </div>
                         {{/is_section}}
                     {{/children}}
-            </li>
     {{/action}}
 {{/ flatnavigation }}
 </div>
-</ul>
