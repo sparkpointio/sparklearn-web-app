@@ -122,6 +122,7 @@ if (isloggedin()) {
         'output' => $OUTPUT,
         'subheader' => $OUTPUT->image_url('subheader', 'theme'),
         'arrow-down' => $OUTPUT->image_url('arrow-down', 'theme'),
+        'bdbcover' => $OUTPUT->image_url('bdb-cover', 'theme'),
         'bodyattributes' => $bodyattributes,
         'hasdrawertoggle' => false,
         'canloginasguest' => $CFG->guestloginbutton and !isguestuser(),
