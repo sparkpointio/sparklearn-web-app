@@ -35,10 +35,10 @@
         <div class="mobile-nav">
             {{>/flat_navigation_mobile }}
             {{{custom_navigation}}}
+            {{>/custom_navigation_mobile }}
             <!-- custom_menu -->
-            {{>/custom_navigation }}
             <!-- page_heading_menu -->
-            {{{ output.page_heading_menu }}}
+            <!--{{{ output.page_heading_menu }}}-->
         </div>
     </div>
     {{#hasdrawertoggle}}
@@ -65,7 +65,9 @@
             {{> theme_moove/flat_navigation }}
             {{{custom_navigation}}}
             <!-- custom_menu -->
-            {{>/custom_navigation }}
+            <ul class="navbar-nav d-lg-flex d-none">
+                {{>/custom_navigation }}
+            </ul>
             <!-- page_heading_menu -->
             {{{ output.page_heading_menu }}}
         </div>
