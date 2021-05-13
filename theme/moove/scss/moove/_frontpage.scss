@@ -379,6 +379,76 @@
  
     }
 
+    .frontpage-contact {
+        // background: url(http://learn.sparkpoint.test/theme/moove/pix/endorsement-bg.jpg) repeat;
+        margin: -4rem 0 0 0;
+        padding: 2rem 0;
+        height: 40rem;
+
+        .contact-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        } 
+        
+        input[type=text] {
+            border: 2px solid #87d2ff;
+            border-radius: .8rem;
+            padding: .3rem 1.8rem;
+            font-size: 0.8rem;
+            text-align: left;
+        }
+
+        .newsletter input[type=text] {
+            border: 2px solid #87d2ff;
+            border-radius: .8rem;
+            padding: .3rem 12.8rem;
+            font-size: 0.8rem;
+            text-align: left;
+        }
+
+        textarea {
+            border: 2px solid #87d2ff;
+            border-radius: .8rem;
+            padding: 2rem 9.2rem;
+            font-size: .8rem;
+            text-align: left!important;
+            display: inline-block;
+        }
+
+        .new-btn {
+            color: #fff;
+            padding: 8px 19px 8px 19px;
+            background-color: #e15309;
+            transition: .5s;
+            border-radius: 4px;
+            font-weight: 100;
+            text-decoration: none;
+            box-shadow: 0 0 8px #e15309;
+            border: none;
+        }
+
+        .new-btn:hover {
+            color: #fff;
+            padding: 8px 19px 8px 19px;
+            font-weight: 900;
+            background-color: #f8981d;
+            box-shadow: 0 0 8px #e15309;
+            transition: .5s;
+
+        }
+
+        
+ 
+    }
+
     .frontpage-numbers {
         background: $brand-primary;
         padding: 8rem 0;
