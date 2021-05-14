@@ -63,27 +63,32 @@
     {{/showdivider}}
     {{#action}}
         {{^is_section}}
-                    <a href="{{{action}}}" data-key="{{key}}>
-                        <span class="text m-l-{{get_indent}}">{{{text}}}</span>
-                    </a>
+            <a href="{{{action}}}" data-key="{{key}}>
+                <span class="text m-l-{{get_indent}}">{{{text}}}</span>
+            </a>
         {{/is_section}}
     {{/action}}
     {{^action}}
-                <a class="nav-link dropdown" href="javascript:void(0);" data-key="{{key}}>
-                    {{#is_section}}
-                        {{#pix}}i/folder{{/pix}}
+        <div class="dropdown">
+            <a class="dropdown-toggle" type="button" data-toggle="dropdown">
+                {{#is_section}}
+                    {{#pix}}i/folder{{/pix}}
+                {{/is_section}}
+                <span class="text">{{{text}}}</span>
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                {{#children}}
+                    {{^is_section}}
+                    <li>
+                        <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
+                            <span class="text">{{{text}}}</span>
+                        </a>
+                    </li>
                     {{/is_section}}
-                    <span class="text">{{{text}}}</span>
-                </a>
-                <div class="dropdown-content">
-                    {{#children}}
-                        {{^is_section}}
-                            <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
-                                <span class="text">{{{text}}}</span>
-                            </a>
-                        {{/is_section}}
-                    {{/children}}
-                </div>
+                {{/children}}
+            </ul>
+        </div>
     {{/action}}
 {{/ flatnavigation }}
 </div>
