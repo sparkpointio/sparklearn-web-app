@@ -69,21 +69,21 @@
         {{/is_section}}
     {{/action}}
     {{^action}}
-                <a class="nav-link dropdown-toggle" href="javascript:void(0);" data-key="{{key}}>
+                <a class="nav-link dropdown" href="javascript:void(0);" data-key="{{key}}>
                     {{#is_section}}
                         {{#pix}}i/folder{{/pix}}
                     {{/is_section}}
                     <span class="text">{{{text}}}</span>
                 </a>
+                <div class="dropdown-content">
                     {{#children}}
                         {{^is_section}}
-                            <div class="dropdown-menu">
-                                    <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
-                                        <span class="text">{{{text}}}</span>
-                                    </a>
-                            </div>
+                            <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
+                                <span class="text">{{{text}}}</span>
+                            </a>
                         {{/is_section}}
                     {{/children}}
+                </div>
     {{/action}}
 {{/ flatnavigation }}
 </div>

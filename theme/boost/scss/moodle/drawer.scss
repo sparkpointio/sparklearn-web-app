@@ -154,7 +154,7 @@ $right-drawer-width: 320px;
     }
     body.drawer-open-left,
     body.drawer-open-right {
-        overflow: hidden;
+        overflow: auto;
     }
 }
 
