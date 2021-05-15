@@ -86,22 +86,22 @@
 
 .dropdown {
     position: relative;
-    display: inline-block;
   }
   
-  .dropdown-content {
+  .dropdown-menu {
     display: none;
-    position: absolute;
+    position: inherit;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+    float:none
   }
   
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+//   .dropdown:hover .dropdown-menu {
+//     display: block;
+//   }
 
 nav.navbar {
     min-height: $navbar-height;
