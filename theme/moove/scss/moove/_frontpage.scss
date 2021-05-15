@@ -449,6 +449,89 @@
  
     }
 
+    .frontpage-social-icons {
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: .8rem 0.8rem;
+        height: 4.7rem;
+
+        .custom-footer-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+
+        .social-icons a {
+            width: 48px;
+            height: 48px;
+            line-height: 58px;
+            border-radius: 100%;
+            display: inline-block;
+            background: rgb(248, 120, 47);
+            background: linear-gradient(45deg, rgba(248, 120, 47, 1) 0%, rgba(225, 83, 9, 1) 100%);
+        }
+        
+        .social-icons a:hover {
+            background: rgb(54, 127, 172);
+            background: linear-gradient(45deg, rgba(54, 127, 172, 1) 0%, rgba(27, 95, 134, 1) 100%);
+        }
+        
+        .social-icons svg {
+            color: #fff;
+            margin-top: .4rem;
+        }
+        
+        .social-icons > a > i {
+            margin-top: 8px;
+            color: white;
+        }
+ 
+    }
+
+    .frontpage-custom-footer {
+        color: #fff!important;
+        background-color: #00273e!important;
+        padding: 2rem 0;
+        height: 14rem;
+
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: .5rem;
+        }
+        ul {
+            padding-left: 0rem;
+            list-style: none;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .endorsement-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+ 
+    }
     .frontpage-numbers {
         background: $brand-primary;
         padding: 8rem 0;
