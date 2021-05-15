@@ -384,18 +384,18 @@
         padding: 2rem 0;
         height: 22rem;
 
-        .contact-header {
-            margin-left: 9rem;
-            margin-right: 9rem;
+        h4 {
+            color: #0f3247!important;
+        }
 
-            h4 {
-                color:#fff;
-            }
+        h5 {
+            font-size: .81875rem;
+            color: #676868;
+        }
 
-            h2 {
-                color: #38bbe8;
-            }
-        } 
+        .blue-80 {
+            color: #088ee4;
+        }
         
         input[type=text], input[type=email] {
             border: 2px solid #87d2ff;
