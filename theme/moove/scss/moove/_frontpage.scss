@@ -383,7 +383,7 @@
         // background: url(http://learn.sparkpoint.test/theme/moove/pix/endorsement-bg.jpg) repeat;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
-        height: 40rem;
+        height: 22rem;
 
         .contact-header {
             margin-left: 9rem;
@@ -398,18 +398,22 @@
             }
         } 
         
-        input[type=text] {
+        input[type=text], input[type=email] {
             border: 2px solid #87d2ff;
             border-radius: .8rem;
-            padding: .3rem 1.8rem;
+            padding: 1rem .5rem;
+            width: 13.4rem;
+            height: 2rem;
             font-size: 0.8rem;
             text-align: left;
         }
 
-        .newsletter input[type=text] {
+        .newsletter input[type=email] {
             border: 2px solid #87d2ff;
             border-radius: .8rem;
-            padding: .3rem 12.8rem;
+            padding: .1rem .5rem;
+            width: 32.5rem;
+            height: 2.2rem;
             font-size: 0.8rem;
             text-align: left;
         }
@@ -417,7 +421,9 @@
         textarea {
             border: 2px solid #87d2ff;
             border-radius: .8rem;
-            padding: 2rem 9.2rem;
+            padding: .7rem 0.7rem;
+            width: 27.2rem;
+            height: 8rem;
             font-size: .8rem;
             text-align: left!important;
             display: inline-block;
