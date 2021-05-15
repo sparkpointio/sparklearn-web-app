@@ -451,8 +451,6 @@
 
         }
 
-        
- 
     }
 
     .frontpage-social-icons {
@@ -505,7 +503,7 @@
         color: #fff!important;
         background-color: #00273e!important;
         padding: 2rem 0;
-        height: 14rem;
+        height: 18rem;
 
         h4 {
             font-size: 1rem;
@@ -536,6 +534,24 @@
                 color: #38bbe8;
             }
         }      
+
+        .footer-logo {
+            
+            h5 {
+                font-size: .8rem;
+                color: #fff;
+                margin-bottom: 0rem;
+            }
+
+            h6 {
+                font-size: .625rem;
+                color: #fff;
+            }
+
+            p {
+                font-size: .7rem;
+            }
+        }
  
     }
     .frontpage-numbers {
