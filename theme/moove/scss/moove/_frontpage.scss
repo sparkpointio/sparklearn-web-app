@@ -548,8 +548,10 @@
                 color: #fff;
             }
 
-            p {
+            p, a {
+                color: #fff;
                 font-size: .7rem;
+                text-decoration: none;
             }
         }
  
