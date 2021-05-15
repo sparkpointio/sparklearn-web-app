@@ -95,12 +95,12 @@ body.drawer-ease {
 
 body.drawer-open-left {
     @include media-breakpoint-up(md) {
-        margin-left: $drawer-width;
+        // margin-left: $drawer-width;
     }
 }
 body.drawer-open-right {
     @include media-breakpoint-up(md) {
-        margin-right: $drawer-width;
+        // margin-right: $drawer-width;
     }
 }
 
@@ -154,7 +154,7 @@ $right-drawer-width: 320px;
     }
     body.drawer-open-left,
     body.drawer-open-right {
-        overflow: hidden;
+        overflow: auto;
     }
 }
 

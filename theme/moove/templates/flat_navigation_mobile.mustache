@@ -56,41 +56,39 @@
     }
 }}
 
-<ul class="navbar-nav d-lg-flex d-none">
+
+<div class="col">
 {{# flatnavigation }}
     {{#showdivider}}
-        </ul>
-<div class="col">
-        <ul class="navbar-nav">
     {{/showdivider}}
     {{#action}}
         {{^is_section}}
-                <li class="nav-item {{#isactive}}active font-weight-bold{{/isactive}}" data-key="{{key}}">
-                    <a href="{{{action}}}">
-                        <span class="text m-l-{{get_indent}}">{{{text}}}</span>
-                    </a>
-                </li>
+            <a href="{{{action}}}" data-key="{{key}}>
+                <span class="text m-l-{{get_indent}}">{{{text}}}</span>
+            </a>
         {{/is_section}}
     {{/action}}
     {{^action}}
-            <li class="nav-item dropdown" data-key="{{key}}">
-                <a class="nav-link dropdown-toggle" href="javascript:void(0);">
-                    {{#is_section}}
-                        {{#pix}}i/folder{{/pix}}
+        <div class="dropdown">
+            <a class="dropdown-toggle" type="button" data-toggle="dropdown">
+                {{#is_section}}
+                    {{#pix}}i/folder{{/pix}}
+                {{/is_section}}
+                <span class="text">{{{text}}}</span>
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                {{#children}}
+                    {{^is_section}}
+                    <li>
+                        <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
+                            <span class="text">{{{text}}}</span>
+                        </a>
+                    </li>
                     {{/is_section}}
-                    <span class="text">{{{text}}}</span>
-                </a>
-                    {{#children}}
-                        {{^is_section}}
-                            <div class="dropdown-menu">
-                                    <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
-                                        <span class="text">{{{text}}}</span>
-                                    </a>
-                            </div>
-                        {{/is_section}}
-                    {{/children}}
-            </li>
+                {{/children}}
+            </ul>
+        </div>
     {{/action}}
 {{/ flatnavigation }}
 </div>
-</ul>
