@@ -123,6 +123,8 @@ if (isloggedin()) {
         'subheader' => $OUTPUT->image_url('subheader', 'theme'),
         'arrow-down' => $OUTPUT->image_url('arrow-down', 'theme'),
         'bdbcover' => $OUTPUT->image_url('bdb-cover', 'theme'),
+        'sparkpointlogo' => $OUTPUT->image_url('sparkpoint-logo', 'theme'),
+        'googlemapaddress' => $OUTPUT->image_url('googlemapaddress', 'theme'),
         'bodyattributes' => $bodyattributes,
         'hasdrawertoggle' => false,
         'canloginasguest' => $CFG->guestloginbutton and !isguestuser(),

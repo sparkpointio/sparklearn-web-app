@@ -447,9 +447,8 @@
             background-color: #f8981d;
             box-shadow: 0 0 8px #e15309;
             transition: .5s;
+        }
 
-        }      
- 
     }
 
     .frontpage-social-icons {
@@ -502,7 +501,7 @@
         color: #fff!important;
         background-color: #00273e!important;
         padding: 2rem 0;
-        height: 14rem;
+        height: 22rem;
 
         h4 {
             font-size: 1rem;
@@ -533,6 +532,34 @@
                 color: #38bbe8;
             }
         }      
+
+        .footer-logo {
+            
+            h5 {
+                font-size: .8rem;
+                color: #fff;
+                margin-bottom: 0rem;
+            }
+
+            h6 {
+                font-size: .625rem;
+                color: #fff;
+            }
+
+            p, a {
+                color: #fff;
+                font-size: .7rem;
+                text-decoration: none;
+            }
+        }
+    
+        .address p {
+            color: #fff;
+            font-size: .8rem!important;
+        }
+        .fa-2x {
+            font-size: 1em!important;
+        }
  
     }
     .frontpage-numbers {
