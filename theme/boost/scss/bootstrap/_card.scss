@@ -167,6 +167,8 @@
       margin-right: $card-deck-margin;
       margin-bottom: 0; // Override the default
       margin-left: $card-deck-margin;
+      border-color: transparent!important;
+      background-color: transparent!important;
     }
   }
 }
