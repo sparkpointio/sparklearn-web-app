@@ -25,11 +25,31 @@
     }
 }
 
+.chevron-right {
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    margin-top: 144px;
+    font-size: 1.3rem;
+    color: #fff;
+    z-index: 2;
+}
+
 #frontpage-category-combo .courses .card-deck .card,
 #frontpage-course-list .frontpage-course-list-all .card-deck .card {
     margin-bottom: 2rem;
 }
 
+.frontpage-course-list-all {
+    .card {
+        background-color: transparent!important;
+        border: transparent!important;
+    }
+
+    .card-title #cardTitle a {
+        color: #fff!important;
+    }
+}
 #page-site-index #mooveslideshow {
     margin: 1rem 0;
 
