@@ -312,13 +312,15 @@ class course_renderer extends \core_course_renderer {
      * @throws \moodle_exception
      */
     protected function course_card_body(coursecat_helper $chelper, core_course_list_element $course, $coursenamelink) {
-        $content = html_writer::start_tag('div', ['class' => 'card-body']);
+        // $content = html_writer::start_tag('div', ['class' => 'card-body']);
 
         $content .= $this->course_category_name($chelper, $course);
 
-        $content .= html_writer::tag('h4', $coursenamelink, ['class' => 'card-title']);
+        $content .= html_writer::tag('h4', $coursenamelink, ['class' => 'card-title', 'id' => 'cardTitle']);
 
-        $content .= $this->course_summary($chelper, $course);
+        $content .= html_writer::tag('span', '>',['class' => 'chevron-right']);
+
+        // $content .= $this->course_summary($chelper, $course); //course summary
 
         $content .= html_writer::end_tag('div');
 
@@ -339,7 +341,7 @@ class course_renderer extends \core_course_renderer {
         $content = '';
 
         if ($cat = core_course_category::get($course->category, IGNORE_MISSING)) {
-            $content .= html_writer::start_tag('div', ['class' => 'coursecat badge badge-info']);
+            // $content .= html_writer::start_tag('div', ['class' => 'coursecat badge badge-info']);
             $content .= html_writer::link(new moodle_url('/course/index.php', ['categoryid' => $cat->id]),
                     $cat->get_formatted_name(), ['class' => $cat->visible ? 'text-white' : 'dimmed']);
             $content .= html_writer::end_tag('div');
