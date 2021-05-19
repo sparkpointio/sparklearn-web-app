@@ -25,11 +25,31 @@
     }
 }
 
+.chevron-right {
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    margin-top: 144px;
+    font-size: 1.3rem;
+    color: #fff;
+    z-index: 2;
+}
+
 #frontpage-category-combo .courses .card-deck .card,
 #frontpage-course-list .frontpage-course-list-all .card-deck .card {
     margin-bottom: 2rem;
 }
 
+.frontpage-course-list-all {
+    .card {
+        background-color: transparent!important;
+        border: transparent!important;
+    }
+
+    .card-title #cardTitle a {
+        color: #fff!important;
+    }
+}
 #page-site-index #mooveslideshow {
     margin: 1rem 0;
 
@@ -119,7 +139,7 @@
         background-repeat: no-repeat;
         background-color: #fff;
         background-size: 100%;
-        min-height: 724px;
+        min-height: 706px;
         padding: 0 4rem;
     }  
 
@@ -128,7 +148,7 @@
         background-repeat: no-repeat;
         background-color: #fff;
         background-size: 100%;
-        min-height: 724px;
+        min-height: 690px;
         padding: 0 4rem;
     }
   
@@ -380,36 +400,39 @@
     }
 
     .frontpage-contact {
-        // background: url(http://learn.sparkpoint.test/theme/moove/pix/endorsement-bg.jpg) repeat;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
-        height: 40rem;
+        height: 25rem;
 
-        .contact-header {
-            margin-left: 9rem;
-            margin-right: 9rem;
+        h4 {
+            color: #0f3247!important;
+        }
 
-            h4 {
-                color:#fff;
-            }
+        h5 {
+            font-size: .81875rem;
+            color: #676868;
+        }
 
-            h2 {
-                color: #38bbe8;
-            }
-        } 
+        .blue-80 {
+            color: #088ee4;
+        }
         
-        input[type=text] {
+        input[type=text], input[type=email] {
             border: 2px solid #87d2ff;
             border-radius: .8rem;
-            padding: .3rem 1.8rem;
+            padding: 1rem .5rem;
+            width: 13.4rem;
+            height: 2rem;
             font-size: 0.8rem;
             text-align: left;
         }
 
-        .newsletter input[type=text] {
+        .newsletter input[type=email] {
             border: 2px solid #87d2ff;
             border-radius: .8rem;
-            padding: .3rem 12.8rem;
+            padding: .1rem .5rem;
+            width: 32.5rem;
+            height: 2.2rem;
             font-size: 0.8rem;
             text-align: left;
         }
@@ -417,7 +440,9 @@
         textarea {
             border: 2px solid #87d2ff;
             border-radius: .8rem;
-            padding: 2rem 9.2rem;
+            padding: .7rem 0.7rem;
+            width: 27.2rem;
+            height: 8rem;
             font-size: .8rem;
             text-align: left!important;
             display: inline-block;
@@ -442,13 +467,121 @@
             background-color: #f8981d;
             box-shadow: 0 0 8px #e15309;
             transition: .5s;
-
         }
 
+    }
+
+    .frontpage-social-icons {
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: .8rem 0.8rem;
+        height: 4.7rem;
+
+        .custom-footer-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+
+        .social-icons a {
+            width: 48px;
+            height: 48px;
+            line-height: 58px;
+            border-radius: 100%;
+            display: inline-block;
+            background: rgb(248, 120, 47);
+            background: linear-gradient(45deg, rgba(248, 120, 47, 1) 0%, rgba(225, 83, 9, 1) 100%);
+        }
         
+        .social-icons a:hover {
+            background: rgb(54, 127, 172);
+            background: linear-gradient(45deg, rgba(54, 127, 172, 1) 0%, rgba(27, 95, 134, 1) 100%);
+        }
+        
+        .social-icons svg {
+            color: #fff;
+            margin-top: .4rem;
+        }
+        
+        .social-icons > a > i {
+            margin-top: 8px;
+            color: white;
+        }
  
     }
 
+    .frontpage-custom-footer {
+        color: #fff!important;
+        background-color: #00273e!important;
+        padding: 2rem 0;
+        height: 22rem;
+
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: .5rem;
+        }
+        ul {
+            padding-left: 0rem;
+            list-style: none;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .footer-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+
+        .footer-logo {
+            
+            h5 {
+                font-size: .8rem;
+                color: #fff;
+                margin-bottom: 0rem;
+            }
+
+            h6 {
+                font-size: .625rem;
+                color: #fff;
+            }
+
+            p, a {
+                color: #fff;
+                font-size: .7rem;
+                text-decoration: none;
+            }
+        }
+    
+        .address p {
+            color: #fff;
+            font-size: .8rem!important;
+        }
+        .fa-2x {
+            font-size: 1em!important;
+        }
+ 
+    }
     .frontpage-numbers {
         background: $brand-primary;
         padding: 8rem 0;

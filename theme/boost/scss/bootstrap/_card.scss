@@ -48,7 +48,28 @@
 
 .card-title {
   margin-bottom: $card-spacer-y;
+  margin-left: -10rem;
+  margin-top: 9rem;
+  z-index: 20;
+  color: #fff!important;
+
+  a {
+    text-decoration: none!important;
+    color:white!important;
+  }
 }
+
+// .card-title::after {
+//     content: ''; 
+//     position: absolute; 
+//     top: 50%; 
+//     left: 3%; 
+//     height: 50%; 
+//     width: 100%;
+//     transform: skew(-25deg, 0deg);
+//     border:1px solid red;
+//     border-top:none;
+// }
 
 .card-subtitle {
   margin-top: -$card-spacer-y / 2;
@@ -134,6 +155,7 @@
 .card-img-bottom {
   flex-shrink: 0; // For IE: https://github.com/twbs/bootstrap/issues/29396
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  border-radius: 19px;
 }
 
 .card-img,
@@ -166,6 +188,8 @@
       margin-right: $card-deck-margin;
       margin-bottom: 0; // Override the default
       margin-left: $card-deck-margin;
+      // border-color: transparent!important;
+      // background-color: transparent!important;
     }
   }
 }
