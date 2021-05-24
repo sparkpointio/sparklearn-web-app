@@ -196,7 +196,7 @@ class course_renderer extends \core_course_renderer {
             $course = new core_course_list_element($course);
         }
 
-        $classes = trim('card');
+        $classes = trim('card course-card');
         if ($chelper->get_show_courses() < self::COURSECAT_SHOW_COURSES_EXPANDED) {
             $classes .= ' collapsed';
         }
@@ -238,10 +238,13 @@ class course_renderer extends \core_course_renderer {
         $courselink = new moodle_url('/course/view.php', array('id' => $course->id));
         $coursenamelink = html_writer::link($courselink, $coursename, array('class' => $course->visible ? '' : 'dimmed'));
 
-        $content = extras::get_course_summary_image($course, $courselink);
-        $content .= $this->course_contacts($course);
+        $content = html_writer::start_tag('div', ['class' => 'course-card-background']);
         $content .= $this->course_card_body($chelper, $course, $coursenamelink);
+        $content .= extras::get_course_summary_image($course, $courselink);
+        // $content .= $this->course_contacts($course);
         $content .= $this->course_card_footer($course);
+        $content .= html_writer::end_tag('div');
+
 
         return $content;
     }
@@ -312,14 +315,16 @@ class course_renderer extends \core_course_renderer {
      * @throws \moodle_exception
      */
     protected function course_card_body(coursecat_helper $chelper, core_course_list_element $course, $coursenamelink) {
-        $content = html_writer::start_tag('div', ['class' => 'card-body']);
 
-        $content .= $this->course_category_name($chelper, $course);
+        // $content = html_writer::start_tag('div', ['class' => 'course-card-background']);
+        $content = html_writer::start_tag('div', ['class' => 'course-card-body']);
 
-        $content .= html_writer::tag('h4', $coursenamelink, ['class' => 'card-title']);
+        // $content .= $this->course_category_name($chelper, $course);
+        $content .= html_writer::tag('h4', $coursenamelink, ['class' => 'course-card-title']);
 
-        $content .= $this->course_summary($chelper, $course);
+        // $content .= $this->course_summary($chelper, $course);
 
+        // $content .= html_writer::end_tag('div');
         $content .= html_writer::end_tag('div');
 
         return $content;
@@ -339,7 +344,7 @@ class course_renderer extends \core_course_renderer {
         $content = '';
 
         if ($cat = core_course_category::get($course->category, IGNORE_MISSING)) {
-            $content .= html_writer::start_tag('div', ['class' => 'coursecat badge badge-info']);
+            // $content .= html_writer::start_tag('div', ['class' => 'coursecat badge badge-info']);
             $content .= html_writer::link(new moodle_url('/course/index.php', ['categoryid' => $cat->id]),
                     $cat->get_formatted_name(), ['class' => $cat->visible ? 'text-white' : 'dimmed']);
             $content .= html_writer::end_tag('div');

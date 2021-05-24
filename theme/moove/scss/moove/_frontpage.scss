@@ -25,11 +25,31 @@
     }
 }
 
+.chevron-right {
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    margin-top: 144px;
+    font-size: 1.3rem;
+    color: #fff;
+    z-index: 2;
+}
+
 #frontpage-category-combo .courses .card-deck .card,
 #frontpage-course-list .frontpage-course-list-all .card-deck .card {
     margin-bottom: 2rem;
 }
 
+.frontpage-course-list-all {
+    .card {
+        background-color: transparent!important;
+        border: transparent!important;
+    }
+
+    .card-title #cardTitle a {
+        color: #fff!important;
+    }
+}
 #page-site-index #mooveslideshow {
     margin: 1rem 0;
 
@@ -94,24 +114,142 @@
         opacity: 0;
         visibility: hidden;
     }
-
+    
     #page-header {
         background-position: left top;
         background-repeat: no-repeat;
         background-color: #fff;
         background-size: 100%;
-        min-height: 540px;
+        min-height: 724px;
         padding: 0 4rem;
     }
+    
+    #page-marketing {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        background-size: 100%;
+        min-height: 724px;
+        padding: 0 4rem;
+    }
+    
 
+    #page-endorsement {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        background-size: 100%;
+        min-height: 690px;
+        padding: 0 4rem;
+    }  
+
+    #page-testimonial {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        background-size: 100%;
+        min-height: 690px;
+        padding: 0 4rem;
+    }
+    
+    #page-course {
+        background-color: #fff;
+        background-size: 100%;
+        min-height: 344px;
+        padding: 0 4rem;
+    }
+    .primary-btn{
+        color: #fff;
+        border: none;
+        margin-top: 2.2rem;
+        padding: 9px 17px;
+        border-radius: 8px;
+        background-color: #e15309;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
+
+    .primary-btn:hover {
+        color: #fff;
+        border: none;
+        font-weight: 900;
+        margin-top: 2.2rem;
+        padding: 9px 17px;
+        border-radius: 8px;
+        background-color: #f8981d;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
+
+    .primary-btn-large{
+        color: #fff;
+        border: none;
+        font-size: 1.4rem;
+        margin-top: 2.2rem;
+        padding: 13px 22px;
+        border-radius: 8px;
+        background-color: #e15309;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
+
+    .primary-btn-large:hover {
+        color: #fff;
+        border: none;
+        font-weight: 900;
+        margin-top: 2.2rem;
+        padding: 13px 22px;
+        border-radius: 8px;
+        background-color: #f8981d;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
+
+    .marketing-btn{
+        color: #fff;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 800;
+        padding: 5px 18px;
+        border-radius: 8px;
+        background-color: #e15309;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
+
+    .marketing-btn:hover{
+        background-color: #f8981d;
+        box-shadow: 0 0 8px #e15309;
+        transition: .5s;
+    }
+
+    .headers-footer {
+        margin-top: 6.4rem;
+    }
+
+    .arrow-icon {
+        margin-top: 20px;
+        animation: Pulsate 2s linear infinite;
+    }
+
+    @keyframes Pulsate {
+        from { opacity: 1; }
+        50% { opacity: 0; }
+        to { opacity: 1; }
+      }
+  
     .frontpage-marketing {
+        background: url(http://learn.sparkpoint.test/theme/moove/pix/marketing-bg.jpg) repeat;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
+        height: 40rem;
 
         .card {
-            flex-basis: calc(25% - 1rem);
+            flex-basis: calc(30% - 1rem);
             text-align: center;
-            margin: 0 .5rem;
+            margin: auto;
+            height: 26rem;
+            border-radius: 16px;
 
             img {
               max-width: 100%;
@@ -131,8 +269,332 @@
                 margin: 1.5em 0;
             }
         }
+
+        .marketing-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }
+
+        .marketing-item-title {
+            h2{
+                color:#9ecce7;
+            }
+        }
+
+        .marketing-item {
+            padding: 0px;
+
+            img {
+                border-radius: 15px;
+            }
+
+            .bottom-sticky {
+                position: sticky;
+                margin-top: 23.5rem!important;
+                margin-right: 1.1rem;
+            }
+        }
+        
+        .item {
+            width: 100px;
+            padding: 10px;
+            background-color: rgba(111,41,97,.3);
+            border: 2px solid rgba(111,41,97,.5);
+            display: inline-block;
+            vertical-align: middle
+          }
     }
 
+    .frontpage-endorsement {
+        background: url(http://learn.sparkpoint.test/theme/moove/pix/endorsement-bg.jpg) repeat;
+        margin: -4rem 0 0 0;
+        padding: 2rem 0;
+        height: 40rem;
+
+        .endorsement-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+ 
+    }
+
+    .frontpage-testimonial {
+        background: url(http://learn.sparkpoint.test/theme/moove/pix/testimonial-bg.jpg) repeat;
+        margin: -4rem 0 0 0;
+        padding: 2rem 0;
+        height: 40rem;
+        margin-top: 1rem;
+
+        .testimonial-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+
+        .card {
+            flex-basis: calc(30% - 1rem);
+            text-align: center;
+            margin: auto;
+            height: 26rem;
+            border-radius: 16px;
+
+            img {
+              max-width: 100%;
+            }
+
+            h2 {
+                color: #565656;
+                margin: 20px 0;
+            }
+
+            h3 {
+                color: #a4a3a3;
+            }
+
+            p {
+                color: #9f9f9f;
+                margin: 1.5em 0;
+            }
+        }
+
+        .testimonial-item-title {
+            h2{
+                color:#9ecce7;
+            }
+        }
+
+        .testimonial-item {
+            padding: 0px;
+
+            img {
+                border-radius: 15px;
+            }
+        }
+        
+        .item {
+            width: 100px;
+            padding: 10px;
+            background-color: rgba(111,41,97,.3);
+            border: 2px solid rgba(111,41,97,.5);
+            display: inline-block;
+            vertical-align: middle
+          }
+
+        .student-photo {
+            border-radius: 50%;
+            width: 8rem;
+            height: 8rem;
+            margin: auto;
+        }
+ 
+    }
+
+    .frontpage-contact {
+        margin: -4rem 0 0 0;
+        padding: 2rem 0;
+        height: 25rem;
+
+        h4 {
+            color: #0f3247!important;
+        }
+
+        h5 {
+            font-size: .81875rem;
+            color: #676868;
+        }
+
+        .blue-80 {
+            color: #088ee4;
+        }
+        
+        input[type=text], input[type=email] {
+            border: 2px solid #87d2ff;
+            border-radius: .8rem;
+            padding: 1rem .5rem;
+            width: 13.4rem;
+            height: 2rem;
+            font-size: 0.8rem;
+            text-align: left;
+        }
+
+        .newsletter input[type=email] {
+            border: 2px solid #87d2ff;
+            border-radius: .8rem;
+            padding: .1rem .5rem;
+            width: 32.5rem;
+            height: 2.2rem;
+            font-size: 0.8rem;
+            text-align: left;
+        }
+
+        textarea {
+            border: 2px solid #87d2ff;
+            border-radius: .8rem;
+            padding: .7rem 0.7rem;
+            width: 27.2rem;
+            height: 8rem;
+            font-size: .8rem;
+            text-align: left!important;
+            display: inline-block;
+        }
+
+        .new-btn {
+            color: #fff;
+            padding: 8px 19px 8px 19px;
+            background-color: #e15309;
+            transition: .5s;
+            border-radius: 4px;
+            font-weight: 100;
+            text-decoration: none;
+            box-shadow: 0 0 8px #e15309;
+            border: none;
+        }
+
+        .new-btn:hover {
+            color: #fff;
+            padding: 8px 19px 8px 19px;
+            font-weight: 900;
+            background-color: #f8981d;
+            box-shadow: 0 0 8px #e15309;
+            transition: .5s;
+        }
+
+    }
+
+    .frontpage-social-icons {
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: .8rem 0.8rem;
+        height: 4.7rem;
+
+        .custom-footer-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+
+        .social-icons a {
+            width: 48px;
+            height: 48px;
+            line-height: 58px;
+            border-radius: 100%;
+            display: inline-block;
+            background: rgb(248, 120, 47);
+            background: linear-gradient(45deg, rgba(248, 120, 47, 1) 0%, rgba(225, 83, 9, 1) 100%);
+        }
+        
+        .social-icons a:hover {
+            background: rgb(54, 127, 172);
+            background: linear-gradient(45deg, rgba(54, 127, 172, 1) 0%, rgba(27, 95, 134, 1) 100%);
+        }
+        
+        .social-icons svg {
+            color: #fff;
+            margin-top: .4rem;
+        }
+        
+        .social-icons > a > i {
+            margin-top: 8px;
+            color: white;
+        }
+ 
+    }
+
+    .frontpage-custom-footer {
+        color: #fff!important;
+        background-color: #00273e!important;
+        padding: 2rem 0;
+        height: 22rem;
+
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: .5rem;
+        }
+        ul {
+            padding-left: 0rem;
+            list-style: none;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .footer-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color:#fff;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
+
+        .footer-logo {
+            
+            h5 {
+                font-size: .8rem;
+                color: #fff;
+                margin-bottom: 0rem;
+            }
+
+            h6 {
+                font-size: .625rem;
+                color: #fff;
+            }
+
+            p, a {
+                color: #fff;
+                font-size: .7rem;
+                text-decoration: none;
+            }
+        }
+    
+        .address p {
+            color: #fff;
+            font-size: .8rem!important;
+        }
+        .fa-2x {
+            font-size: 1em!important;
+        }
+ 
+    }
     .frontpage-numbers {
         background: $brand-primary;
         padding: 8rem 0;
@@ -368,6 +830,8 @@ body.notloggedin {
         #intro {
             text-align: left;
             color: #fff;
+            margin-left: 8rem;
+            margin-top: 6rem;
 
             h1 {
                 color: #fff;
@@ -382,6 +846,22 @@ body.notloggedin {
                 letter-spacing: .1rem;
                 max-width: 80%;
             }
+
+            .banner-text {
+                font-size: 2.8rem;
+                color: #000!important;
+                letter-spacing: .2rem;
+                text-shadow: 2px 4px 4px #000;
+                margin-top: 2rem;
+                margin-bottom: 0rem;
+            }
+
+            .banner-subtext {
+                font-size: .9rem;
+                color: #323333 !important;
+                margin-right: 17rem;
+            }
+
         }
 
         h3 {
@@ -490,7 +970,9 @@ body.notloggedin {
 
             .card {
                 margin-bottom: .25rem;
-
+                flex-basis: calc(34% - 5rem);
+                text-align: center;
+                margin: 0px 2.1rem;
                 &:last-of-type {
                     margin-bottom: 0;
                 }

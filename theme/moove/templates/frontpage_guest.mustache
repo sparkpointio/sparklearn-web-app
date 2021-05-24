@@ -64,31 +64,41 @@
             {{^sliderenabled}}
                 <div class="row" id="loginbox">
                     <div class="col-sm-12 hidden-sm-down {{#disablefrontpageloginbox}}col-md-12{{/disablefrontpageloginbox}}{{^disablefrontpageloginbox}}col-md-7{{/disablefrontpageloginbox}}" id="intro">
-                        {{#bannerheading}}
-                            <h1>{{{ bannerheading }}}</h1>
-                        {{/bannerheading}}
+                            
                         {{#bannercontent}}
-                            <h2>{{{ bannercontent }}}</h2>
+                            <h1 class="banner-text">Welcome to</h1>
+                            <img class="img-fluid" src="{{{subheader}}}">
+                            <h2  class="banner-subtext">{{{ bannercontent }}}</h2>
+                            <a href="https://earn.sparkpoint.io/register" target="_blank"><button class="primary-btn">Register Now</button></a>
                         {{/bannercontent}}
                     </div>
-                    {{^disablefrontpageloginbox}}
-                        <div class="col-12 col-sm-12 col-md-5 card d-none d-lg-block" id="boxForm">
-                            {{>theme_moove/frontpage_login}}
-                        </div><!-- end of .card-body -->
-                    {{/disablefrontpageloginbox}}
                 </div> <!-- end of #boxForm -->
             {{/sliderenabled}}
+            <div class="text-center headers-footer">
+                <h2>Unlock the world of blockchain and cryptocurrency</h2>
+                <a href="#page-marketing">
+                    <img class="img-fluid arrow-icon" src="{{{arrow-down}}}">
+                </a>
+            </div>
         </div>
 
         {{>theme_moove/frontpage_marketing}}
 
-        <div class="container frontpage-maincontent">
+        <div id="page-course" class="container frontpage-maincontent">
           {{{ output.main_content }}}
         </div>
 
-        {{>theme_moove/frontpage_numbers}}
+        {{>theme_moove/frontpage_endorsement}}
 
-        {{>theme_moove/frontpage_sponsorsclients}}
+        {{>theme_moove/frontpage_testimonials}}
+
+        {{>theme_moove/frontpage_contact}}
+
+        {{>theme_moove/frontpage_footer}}
+        
+        {{! {{>theme_moove/frontpage_numbers}}
+
+        {{! {{>theme_moove/frontpage_sponsorsclients}} 
     </div>
 
 {{>theme_moove/inc_end}}

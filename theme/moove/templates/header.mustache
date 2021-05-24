@@ -25,10 +25,24 @@
 {{> theme_moove/accessibilitybar }}
 
 <nav class="fixed-top navbar navbar-light navbar-expand moodle-has-zindex">
-    {{#hasdrawertoggle}}
-        <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
-            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="slicon-menu"></i><span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+    <div class="menu d-lg-none d-flex">
+        <input type="checkbox" id="check" class="d-none">
+        <label for="check" class="nav-sw-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="mobile-nav">
+            {{>/flat_navigation_mobile }}
+            {{{custom_navigation}}}
+            {{>/custom_navigation_mobile }}
+            <!-- custom_menu -->
+            <!-- page_heading_menu -->
+            <!--{{{ output.page_heading_menu }}}-->
         </div>
+    </div>
+    {{#hasdrawertoggle}}
+        
     {{/hasdrawertoggle}}
 
     <a href="{{{ config.wwwroot }}}" class="navbar-brand {{# output.get_logo }}has-logo{{/ output.get_logo }}
@@ -46,14 +60,22 @@
         {{/ output.get_logo }}
     </a>
 
-    <ul class="navbar-nav d-none d-md-flex custom-menus">
-        <!-- custom_menu -->
-        {{{ output.custom_menu }}}
-        <!-- page_heading_menu -->
-        {{{ output.page_heading_menu }}}
+    <ul class="navbar-nav d-none d-lg-flex custom-menus">
+        <div class="row">
+            {{> theme_moove/flat_navigation }}
+            {{{custom_navigation}}}
+            <!-- custom_menu -->
+            <ul class="navbar-nav d-lg-flex d-none">
+                {{>/custom_navigation }}
+            </ul>
+            <!-- page_heading_menu -->
+            {{{ output.page_heading_menu }}}
+        </div>
+        
+        
     </ul>
     <ul class="nav navbar-nav ml-auto">
-        <div class="d-none d-lg-block">
+        <!--<div class="d-none d-lg-block">
             {{{ output.search_box }}}
         </div>
 
@@ -61,8 +83,10 @@
             {{{ output.render_lang_menu }}}
         </li>
 
-        {{{ output.navbar_plugin_output }}}
+        {{{ output.navbar_plugin_output }}}-->
 
         {{{ output.user_menu }}}
     </ul>
 </nav>
+
+
