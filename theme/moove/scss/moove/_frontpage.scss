@@ -239,7 +239,8 @@
       }
   
     .frontpage-marketing {
-        background: url(http://learn.sparkpoint.test/theme/moove/pix/marketing-bg.jpg) repeat;
+        background: url(/sparklearn-web-app/theme/moove/pix/marketing-bg.jpg) repeat;
+        background-size: auto !important;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
         height: 40rem;
@@ -281,6 +282,11 @@
             h2 {
                 color: #38bbe8;
             }
+
+            @media (max-width: 830px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
 
         .marketing-item-title {
@@ -314,14 +320,15 @@
     }
 
     .frontpage-endorsement {
-        background: url(http://learn.sparkpoint.test/theme/moove/pix/endorsement-bg.jpg) repeat;
+        background: url(/sparklearn-web-app/theme/moove/pix/endorsement-bg.jpg) repeat;
+        background-size: auto !important;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
         height: 40rem;
 
         .endorsement-header {
-            margin-left: 9rem;
-            margin-right: 9rem;
+            // margin-left: 9rem;
+            // margin-right: 9rem;
 
             h4 {
                 color:#fff;
@@ -330,12 +337,17 @@
             h2 {
                 color: #38bbe8;
             }
-        }      
+        }
+        
+        img {
+            width: 100%
+        }
  
     }
 
     .frontpage-testimonial {
-        background: url(http://learn.sparkpoint.test/theme/moove/pix/testimonial-bg.jpg) repeat;
+        background: url(/sparklearn-web-app/theme/moove/pix/testimonial-bg.jpg) repeat;
+        background-size: auto !important;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
         height: 40rem;
