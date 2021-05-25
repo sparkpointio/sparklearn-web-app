@@ -239,6 +239,7 @@
       }
   
     .frontpage-marketing {
+        // background: url(/theme/moove/pix/marketing-bg.jpg) repeat;
         background: url(/sparklearn-web-app/theme/moove/pix/marketing-bg.jpg) repeat;
         background-size: auto !important;
         margin: -4rem 0 0 0;
@@ -246,6 +247,7 @@
         height: 40rem;
 
         .card {
+            position: absolute;
             flex-basis: calc(30% - 1rem);
             text-align: center;
             margin: auto;
@@ -320,11 +322,12 @@
     }
 
     .frontpage-endorsement {
+        // background: url(/theme/moove/pix/endorsement-bg.jpg) repeat;
         background: url(/sparklearn-web-app/theme/moove/pix/endorsement-bg.jpg) repeat;
         background-size: auto !important;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
-        height: 40rem;
+        // height: 40rem;
 
         .endorsement-header {
             // margin-left: 9rem;
@@ -346,6 +349,7 @@
     }
 
     .frontpage-testimonial {
+        // background: url(/theme/moove/pix/testimonial-bg.jpg) repeat;
         background: url(/sparklearn-web-app/theme/moove/pix/testimonial-bg.jpg) repeat;
         background-size: auto !important;
         margin: -4rem 0 0 0;
@@ -354,8 +358,8 @@
         margin-top: 1rem;
 
         .testimonial-header {
-            margin-left: 9rem;
-            margin-right: 9rem;
+            // margin-left: 9rem;
+            // margin-right: 9rem;
 
             h4 {
                 color:#fff;
