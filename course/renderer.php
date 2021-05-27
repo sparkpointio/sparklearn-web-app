@@ -2450,7 +2450,7 @@ class core_course_renderer extends plugin_renderer_base {
                 case FRONTPAGEALLCOURSELIST:
                     $availablecourseshtml = $this->frontpage_available_courses();
                     $output .= $this->frontpage_part('skipavailablecourses', 'frontpage-available-course-list',
-                        get_string('availablecourses'), $availablecourseshtml);
+                        get_string('convenientlearning'), $availablecourseshtml);
                     break;
 
                 case FRONTPAGECATEGORYNAMES:
