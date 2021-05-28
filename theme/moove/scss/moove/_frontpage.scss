@@ -133,6 +133,14 @@
         padding: 0 4rem;
     }
     
+    #page-guides {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        background-size: 100%;
+        min-height: 500px;
+        padding: 0 4rem;
+    }  
 
     #page-endorsement {
         background-position: left top;
@@ -345,6 +353,27 @@
         img {
             width: 100%
         }
+ 
+    }
+
+    .frontpage-guides {
+        background: url(http://learn.sparkpoint.test/theme/moove/pix/guides-bg.jpg) repeat;
+        margin: -4rem 0 0 0;
+        padding: 2rem 0;
+        height: 36rem;
+
+        .guides-header {
+            margin-left: 9rem;
+            margin-right: 9rem;
+
+            h4 {
+                color: #20668e;
+            }
+
+            h2 {
+                color: #38bbe8;
+            }
+        }      
  
     }
 
