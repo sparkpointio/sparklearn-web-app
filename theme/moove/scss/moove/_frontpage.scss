@@ -509,6 +509,12 @@
             display: inline-block;
         }
 
+        .btn-container {
+            @media(max-width: 1000px){
+                justify-content: center;
+            }
+        }
+
         .new-btn {
             color: #fff;
             padding: 8px 19px 8px 19px;
@@ -519,6 +525,10 @@
             text-decoration: none;
             box-shadow: 0 0 8px #e15309;
             border: none;
+
+            @media(min-width: 992px){
+                float: right;
+            }
         }
 
         .new-btn:hover {
