@@ -84,10 +84,17 @@
 
         {{>theme_moove/frontpage_marketing}}
 
-        <div id="page-course" class="container frontpage-maincontent">
-            <h4 class="text-center">CONVENIENT LEARNING</h4>
-            <h2 class="text-center ml-auto">LEARN BY COURSE TOPIC, ETC</h2>
-          {{{ output.main_content }}}
+        <div id="page-course" class="frontpage-maincontent">
+            <div class="container my-5">
+                <h4 class="text-center">CONVENIENT LEARNING</h4>
+                <h2 class="text-center ml-auto">LEARN BY COURSE</h2>
+                {{{ output.main_content }}}
+                <div class="text-center mt-1 mt-sm-4">
+                    <a href="#" target="_blank">
+                        <button class="primary-btn-large">View all course</button>
+                    </a>
+                </div>
+            </div>
         </div>
 
         {{>theme_moove/frontpage_guides}}
