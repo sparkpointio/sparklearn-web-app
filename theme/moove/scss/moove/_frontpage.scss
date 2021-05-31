@@ -148,6 +148,7 @@
         background-repeat: no-repeat;
         background-color: #fff;
         background-size: 100%;
+        background-attachment: fixed;
         min-height: 690px;
         padding: 0 4rem;
     }  
@@ -253,7 +254,7 @@
         background-size: auto !important;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
-        height: 40rem;
+        // height: 40rem;
 
         .card {
             position: absolute;
