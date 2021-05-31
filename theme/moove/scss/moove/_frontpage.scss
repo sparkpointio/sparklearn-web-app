@@ -116,12 +116,13 @@
     }
     
     #page-header {
-        background-position: left top;
+        background-position: center;
         background-repeat: no-repeat;
         background-color: #fff;
-        background-size: 100%;
+        // background-size: 100%;
+        background-attachment: fixed;
         min-height: 724px;
-        padding: 0 4rem;
+        // padding: 0 4rem;
     }
     
     #page-marketing {
@@ -876,8 +877,8 @@ body.notloggedin {
         #intro {
             text-align: left;
             color: #fff;
-            margin-left: 8rem;
-            margin-top: 6rem;
+            // margin-left: 8rem;
+            // margin-top: 6rem;
 
             h1 {
                 color: #fff;
@@ -890,7 +891,7 @@ body.notloggedin {
                 color: #fff;
                 text-shadow: 1px 1px 1px #000;
                 letter-spacing: .1rem;
-                max-width: 80%;
+                // max-width: 80%;
             }
 
             .banner-text {
@@ -905,7 +906,7 @@ body.notloggedin {
             .banner-subtext {
                 font-size: .9rem;
                 color: #323333 !important;
-                margin-right: 17rem;
+                // margin-right: 17rem;
             }
 
         }
