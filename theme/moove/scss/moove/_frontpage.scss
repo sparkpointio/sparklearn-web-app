@@ -601,6 +601,13 @@
                 text-decoration: none;
             }
         }
+
+        .footer-divider {
+            @media(max-width:992px){
+                text-align: center;
+            }
+        }
+
         .footer-header {
             margin-left: 9rem;
             margin-right: 9rem;
