@@ -171,7 +171,7 @@
     .primary-btn{
         color: #fff;
         border: none;
-        margin-top: 2.2rem;
+        // margin-top: 2.2rem;
         padding: 9px 17px;
         border-radius: 8px;
         background-color: #e15309;
@@ -183,7 +183,7 @@
         color: #fff;
         border: none;
         font-weight: 900;
-        margin-top: 2.2rem;
+        // margin-top: 2.2rem;
         padding: 9px 17px;
         border-radius: 8px;
         background-color: #f8981d;
@@ -195,7 +195,7 @@
         color: #fff;
         border: none;
         font-size: 1.4rem;
-        margin-top: 2.2rem;
+        // margin-top: 2.2rem;
         padding: 13px 22px;
         border-radius: 8px;
         background-color: #e15309;
@@ -207,7 +207,7 @@
         color: #fff;
         border: none;
         font-weight: 900;
-        margin-top: 2.2rem;
+        // margin-top: 2.2rem;
         padding: 13px 22px;
         border-radius: 8px;
         background-color: #f8981d;
@@ -731,8 +731,12 @@
         padding-top: 2rem;
         padding-bottom: 2rem;
 
+        h4 {
+            color: #20668e;
+        }
+
         h2 {
-            // margin-bottom: 4rem;
+            color: #38bbe8;
         }
     }
 
