@@ -234,7 +234,7 @@
     }
 
     .headers-footer {
-        margin-top: 6.4rem;
+        // margin-top: 6.4rem;
     }
 
     .arrow-icon {
@@ -917,7 +917,7 @@ body.notloggedin {
             }
 
             .banner-text {
-                font-size: 2.8rem;
+                font-size: calc(45px + 5 * ((100vw - 320px) / 680));
                 color: #000!important;
                 letter-spacing: .2rem;
                 // text-shadow: 2px 4px 4px #000;
@@ -926,7 +926,7 @@ body.notloggedin {
             }
 
             .banner-subtext {
-                font-size: .9rem;
+                font-size: calc(16px + 6 * ((100vw - 320px) / 680));
                 color: #323333 !important;
                 // margin-right: 17rem;
             }
