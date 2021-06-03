@@ -116,17 +116,18 @@
     }
     
     #page-header {
-        background-position: center;
+        background: url("/theme/moove/pix/headerimg.jpg") !important;
+        background-position: center !important;
         background-repeat: no-repeat;
         background-color: #fff;
         background-attachment: fixed;
         background-size: cover;
-        min-height: 100vh;
+        min-height: 100vh !important;
     }
     
     #page-marketing {
         min-height: 724px;
-        padding: 0 4rem;
+        // padding: 0 4rem;
     }
     
     #page-guides {
@@ -136,7 +137,7 @@
 
     #page-endorsement {
         min-height: 690px;
-        padding: 0 4rem;
+        // padding: 0 4rem;
     }  
 
     #page-testimonial {
@@ -146,7 +147,7 @@
     
     #page-course {
         min-height: 344px;
-        padding: 0 4rem;
+        // padding: 0 4rem;
     }
     .primary-btn{
         color: #fff;
