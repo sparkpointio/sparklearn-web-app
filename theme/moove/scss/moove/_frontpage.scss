@@ -119,52 +119,32 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: #fff;
-        // background-size: 100%;
         background-attachment: fixed;
+        background-size: cover;
         min-height: 100vh;
-        // padding: 0 4rem;
     }
     
     #page-marketing {
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-color: #fff;
-        background-size: 100%;
         min-height: 724px;
         padding: 0 4rem;
     }
     
     #page-guides {
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-color: #fff;
-        background-size: 100%;
         min-height: 500px;
         padding: 0 4rem;
     }  
 
     #page-endorsement {
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-color: #fff;
-        background-size: 100%;
-        background-attachment: inherit;
         min-height: 690px;
         padding: 0 4rem;
     }  
 
     #page-testimonial {
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-color: #fff;
-        background-size: 100%;
         min-height: 690px;
         padding: 0 4rem;
     }
     
     #page-course {
-        background-color: #fff;
-        background-size: 100%;
         min-height: 344px;
         padding: 0 4rem;
     }
@@ -249,9 +229,8 @@
       }
   
     .frontpage-marketing {
-        // background: url(/theme/moove/pix/marketing-bg.jpg) repeat;
-        background: url(/sparklearn-web-app/theme/moove/pix/marketing-bg.jpg) repeat;
-        background-size: auto !important;
+        background: url(/theme/moove/pix/marketing-bg.jpg) repeat;
+        background-size: cover;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
         // height: 40rem;
@@ -332,8 +311,7 @@
     }
 
     .frontpage-endorsement {
-        // background: url(/theme/moove/pix/endorsement-bg.jpg) repeat;
-        background: url(/sparklearn-web-app/theme/moove/pix/endorsement-bg.jpg) repeat;
+        background: url(/theme/moove/pix/endorsement-bg.jpg) repeat;
         background-size: cover !important;
         // margin: -4rem 0 0 0;
         padding: 2rem 0;
@@ -359,8 +337,7 @@
     }
 
     .frontpage-guides {
-        // background: url(http://learn.sparkpoint.test/theme/moove/pix/guides-bg.jpg) repeat;
-        background: url(/sparklearn-web-app/theme/moove/pix/guides-bg.jpg) repeat;
+        background: url(/theme/moove/pix/guides-bg.jpg) repeat;
         // margin: -4rem 0 0 0;
         // padding: 2rem 0;
         // height: 36rem;
@@ -381,9 +358,8 @@
     }
 
     .frontpage-testimonial {
-        // background: url(/theme/moove/pix/testimonial-bg.jpg) repeat;
-        background: url(/sparklearn-web-app/theme/moove/pix/testimonial-bg.jpg) repeat;
-        background-size: auto !important;
+        background: url(/theme/moove/pix/testimonial-bg.jpg) repeat;
+        background-size: cover;
         margin: -4rem 0 0 0;
         padding: 2rem 0;
         height: 40rem;
