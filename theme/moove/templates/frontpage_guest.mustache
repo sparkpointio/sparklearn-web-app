@@ -63,7 +63,7 @@
 
             {{^sliderenabled}}
                 <div class="row ml-md-5 pl-md-5 mx-2 mb-0" id="loginbox">
-                    <div class="col-sm-12 hidden-sm-down ml-md-5 pl-md-5 pt-md-5 {{#disablefrontpageloginbox}}col-md-12{{/disablefrontpageloginbox}}{{^disablefrontpageloginbox}}col-md-7{{/disablefrontpageloginbox}}" id="intro">
+                    <div class="col-sm-12 hidden-sm-down ml-md-5 pl-md-5 pt-lg-5 {{#disablefrontpageloginbox}}col-md-12{{/disablefrontpageloginbox}}{{^disablefrontpageloginbox}}col-md-7{{/disablefrontpageloginbox}}" id="intro">
                             
                         {{#bannercontent}}
                             <h1 class="mt-md-3 pt-lg-2 banner-text">Welcome to</h1>
@@ -74,13 +74,15 @@
                     </div>
                 </div> <!-- end of #boxForm -->
             {{/sliderenabled}}
-            <div class="text-center headers-footer">
+            <div class="row justify-content-center">
+            <div class="text-center fixed-bottom position-absolute headers-footer">
                 <h2>Unlock the world of blockchain and cryptocurrency</h2>
                 <a href="#page-marketing">
                     <img class="img-fluid arrow-icon" src="{{{arrow-down}}}">
                 </a>
             </div>
         </div>
+    </div>
 
         {{>theme_moove/frontpage_marketing}}
 
@@ -91,7 +93,7 @@
                 {{{ output.main_content }}}
                 <div class="text-center mt-1 mt-sm-4">
                     <a href="#" target="_blank">
-                        <button class="primary-btn-large">View all course</button>
+                        <button class="primary-btn-large">View all courses</button>
                     </a>
                 </div>
             </div>
@@ -110,6 +112,5 @@
         {{! {{>theme_moove/frontpage_numbers}}
 
         {{! {{>theme_moove/frontpage_sponsorsclients}} 
-    </div>
 
 {{>theme_moove/inc_end}}
