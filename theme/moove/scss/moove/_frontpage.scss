@@ -1054,3 +1054,97 @@ body.notloggedin {
         }
     }
 }
+
+.carousel-wrap {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+  .owl-carousel .owl-nav{
+    overflow: hidden;
+    height: 0px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, 
+  .owl-theme .owl-dots .owl-dot:hover span {
+      background: #2caae1;
+  }
+
+
+  .owl-carousel .item {
+      text-align: center;
+  }
+
+  .owl-carousel .nav-btn {
+      color: #fff!important;
+      height: 77px;
+      position: absolute;
+      width: 26px;
+      font-size: 50px;
+      cursor: pointer;
+      top: 173px !important;
+      transition: color .2s ease-in-out;
+  }
+
+  .owl-carousel .nav-btn:hover {
+      color:#39beec!important;
+      transition: color .2s ease-in-out;
+  } 
+
+  .marketing-carousel.owl-carousel .nav-btn {
+    color: #fff!important;
+    height: 77px;
+    position: absolute;
+    width: 26px;
+    font-size: 50px;
+    cursor: pointer;
+    top: 205px !important;
+    transition: color .2s ease-in-out;
+  }
+
+  .marketing-carousel.owl-carousel .nav-btn:hover {
+    color:#39beec!important;
+    transition: color .2s ease-in-out;
+  } 
+
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+  }
+
+  .owl-carousel .prev-slide{
+      background: url(nav-icon.png) no-repeat scroll 0 0;
+      left: -55px;
+  }
+  .owl-carousel .next-slide{
+      background: url(nav-icon.png) no-repeat scroll -24px 0px;
+      right: -50px;
+  }
+  .owl-carousel .prev-slide:hover{
+     background-position: 0px -53px;
+  }
+  .owl-carousel .next-slide:hover{
+    background-position: -24px -53px;
+  }
+
+  .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+      display: block!important;
+  }
+
+  span.img-text {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 23px;
+    display: block;
+    text-transform: capitalize;
+  }
+  span.img-text:hover {
+    color: #2caae1;
+  }
