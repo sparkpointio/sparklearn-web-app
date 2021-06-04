@@ -62,14 +62,19 @@
 
     <ul class="navbar-nav d-none d-lg-flex custom-menus">
         <div class="row">
-            {{> theme_moove/flat_navigation }}
-            {{{custom_navigation}}}
-            <!-- custom_menu -->
-            <ul class="navbar-nav d-lg-flex d-none">
-                {{>/custom_navigation }}
-            </ul>
-            <!-- page_heading_menu -->
-            {{{ output.page_heading_menu }}}
+            <div class="col-12">
+                {{> theme_moove/flat_navigation }}
+                {{{custom_navigation}}}
+                <!-- custom_menu -->
+                <ul class="navbar-nav d-lg-flex d-none">
+                    {{>/custom_navigation }}
+                    <li class="nav-item mr-4">
+                        <a class="new-btn" href="./login/index.php">Login</a>
+                    </li>
+                </ul>
+                <!-- page_heading_menu -->
+                {{{ output.page_heading_menu }}}
+            </div>
         </div>
         
         

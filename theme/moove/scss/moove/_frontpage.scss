@@ -123,6 +123,10 @@
         background-attachment: fixed;
         background-size: cover;
         min-height: 100vh !important;
+
+        .section-link {
+            z-index: 0;
+        }
     }
     
     #page-marketing {
@@ -232,12 +236,18 @@
         padding: 2rem 0;
         // height: 40rem;
 
+        .owl-item {
+            h2 {
+                color: #B3E3FF;
+            }
+        }
+
         .card {
             // position: absolute;
             flex-basis: calc(30% - 1rem);
             text-align: center;
             margin: auto;
-            height: 26rem;
+            height: 30rem;
             border-radius: 16px;
 
             img {
@@ -277,23 +287,24 @@
             }
         }
 
-        .marketing-item-title {
-            h2{
-                color:#9ecce7;
-            }
-        }
-
+        
         .marketing-item {
             padding: 0px;
-
+            
             img {
                 border-radius: 15px;
             }
-
+            
             .bottom-sticky {
                 position: sticky;
                 margin-top: 23.5rem!important;
                 margin-right: 1.1rem;
+            }
+        }
+
+        .marketing-item-title {
+            h2{
+                color:#9ecce7;
             }
         }
         
