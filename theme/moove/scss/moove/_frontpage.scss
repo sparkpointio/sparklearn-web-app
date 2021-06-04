@@ -122,7 +122,8 @@
         background-color: #fff;
         background-attachment: fixed;
         background-size: cover;
-        min-height: 100vh !important;
+        min-height: 830px !important;
+        height: 100vh;
 
         .section-link {
             z-index: 0;
@@ -875,6 +876,7 @@ body.notloggedin {
     #loginbox {
         opacity: 0.94;
         margin-bottom: 3rem;
+        height: 75%;
 
         &.dropdown-menu {
             top: 70px !important;
@@ -1025,7 +1027,7 @@ body.notloggedin {
                 margin-bottom: .25rem;
                 flex-basis: calc(34% - 5rem);
                 text-align: center;
-                margin: 0px 2.1rem;
+                // margin: 0px 2.1rem;
                 &:last-of-type {
                     margin-bottom: 0;
                 }
