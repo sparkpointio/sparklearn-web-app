@@ -221,7 +221,7 @@
 
     .arrow-icon {
         margin-top: 20px;
-        animation: Pulsate 2s linear infinite;
+        // animation: Pulsate 2s linear infinite;
     }
 
     @keyframes Pulsate {
@@ -1157,4 +1157,8 @@ body.notloggedin {
   }
   span.img-text:hover {
     color: #2caae1;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
