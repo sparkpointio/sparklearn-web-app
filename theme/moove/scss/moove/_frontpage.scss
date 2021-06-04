@@ -453,7 +453,7 @@
         
         input[type=text], input[type=email] {
             border: 2px solid #87d2ff;
-            border-radius: .8rem;
+            border-radius: 0rem;
             padding: 1rem .5rem;
             width: 100%;
             height: 2rem;
@@ -463,7 +463,7 @@
 
         .newsletter input[type=email] {
             border: 2px solid #87d2ff;
-            border-radius: .8rem;
+            border-radius: 0rem;
             padding: .1rem .5rem;
             width: 32.5rem;
             height: 2.2rem;
@@ -473,9 +473,9 @@
 
         textarea {
             border: 2px solid #87d2ff;
-            border-radius: .8rem;
+            border-radius: 0rem;
             padding: .7rem 0.7rem;
-            width: 27.2rem;
+            width: 100%;
             height: 8rem;
             font-size: .8rem;
             text-align: left!important;
