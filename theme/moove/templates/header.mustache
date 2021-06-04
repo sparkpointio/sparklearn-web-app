@@ -22,9 +22,7 @@
     Example context (json): {}
 }}
 
-{{> theme_moove/accessibilitybar }}
-
-<nav class="fixed-top navbar navbar-light navbar-expand moodle-has-zindex">
+<nav class="fixed-top navbar navbar-light navbar-expand-lg moodle-has-zindex">
     <div class="menu d-lg-none d-flex">
         <input type="checkbox" id="check" class="d-none">
         <label for="check" class="nav-sw-toggle">
@@ -41,57 +39,23 @@
             <!--{{{ output.page_heading_menu }}}-->
         </div>
     </div>
-    {{#hasdrawertoggle}}
-        
-    {{/hasdrawertoggle}}
-
-    <a href="{{{ config.wwwroot }}}" class="navbar-brand {{# output.get_logo }}has-logo{{/ output.get_logo }}
-        {{^ output.get_logo }}
-            d-none d-sm-inline
-        {{/ output.get_logo }}
-            ">
-        {{# output.get_logo }}
-            <span class="logo d-sm-inline">
-                <img src="{{output.get_logo}}" alt="{{sitename}}">
-            </span>
-        {{/ output.get_logo }}
-        {{^ output.get_logo }}
-            <span class="site-name d-md-inline">{{{ sitename }}}</span>
-        {{/ output.get_logo }}
+    <a href="{{{ config.wwwroot }}}" class="navbar-brand">
+        <span class="logo d-sm-inline">
+            <img src="{{output.get_logo}}" alt="{{sitename}}">
+        </span>
     </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto custom-menus">
+            {{>/custom_navigation }}
+        </ul>
 
-    <ul class="navbar-nav d-none d-lg-flex custom-menus">
-        <div class="row">
-            <div class="col-12">
-                {{> theme_moove/flat_navigation }}
-                {{{custom_navigation}}}
-                <!-- custom_menu -->
-                <ul class="navbar-nav d-lg-flex d-none">
-                    {{>/custom_navigation }}
-                    <li class="nav-item mr-4">
-                        <a class="new-btn" href="./login/index.php">Login</a>
-                    </li>
-                </ul>
-                <!-- page_heading_menu -->
-                {{{ output.page_heading_menu }}}
-            </div>
-        </div>
-        
-        
-    </ul>
-    <ul class="nav navbar-nav ml-auto">
-        <!--<div class="d-none d-lg-block">
-            {{{ output.search_box }}}
-        </div>
+        {{! <li class="nav-item mr-4">
+            <a class="new-btn" href="./login/index.php">Login</a>
+        </li> }}
 
-        <li class="nav-item lang-menu">
-            {{{ output.render_lang_menu }}}
-        </li>
-
-        {{{ output.navbar_plugin_output }}}-->
-
-        <!--{{{ output.user_menu }}}-->
-    </ul>
+        <button class="btn primary-btn">Login</button>
+    </div>
 </nav>
+
 
 
