@@ -22,39 +22,39 @@
 
 <div id="page-contact" class="frontpage-contact">
         <div class="container my-3">
-            <div class="row">
-                <div class="col-lg-6 px-5 py-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 px-5 py-3">
                     <h4>Connect With Us</h4>
                     <form>
                         <div class="row">
-                            <input class="col-12 col-sm-6 my-1" type="text" placeholder="Name (Optional)">
-                            <input class="col-12 col-sm-6 my-1" type="email" placeholder="Email Address (Required)">
+                            <div class="col-12 col-sm-6 my-1"> 
+                                <input type="text" placeholder="Name (Optional)">
+                            </div>
+                            {{! <div class="col-sm-1"></div> }}
+                            <div class="col-12 col-sm-6 my-1">
+                                <input type="email" placeholder="Email Address (Required)">
+                            </div>
                         </div>
                         <div class="row">
-                            <textarea class="col-12 my-1" type="textarea" placeholder="Write your message here"></textarea>
+                            <div class="col-12 my-1">
+                                <textarea type="textarea" placeholder="Write your message here"></textarea>
+                            </div>
                         </div>
-                        <div class="row btn-container">
+                        <div class="row btn-container mr-lg-1">
                             <div class="col-lg-12 col-4 p-0">
                                 <button class="col-lg-4 col-12 new-btn d-block">Send</button>
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="col-lg-6 px-5 py-3 newsletter">
-                    <div class="row">
-                        <h4>Subscribe to our Newsletter</h4>
-                    </div>
+                    <h4>Subscribe to our Newsletter</h4>
                     <form>
                         <div class="row">
-                            <input class="col-12 my-1" type="email" placeholder="Email Address">
+                            <div class="col-12 my-1">
+                                <input type="email" placeholder="Email Address">
+                            </div>
                         </div>
-                        <div class="row">
-                            <h5 class="ml-1">By clicking Submit, you agree to our 
-                                <span class="blue-80"><a href="https://sparkpoint.io/privacy#page-section" title="Terms">Terms</a></span>
-                                 and that you have read our <span class="blue-80"><a href="https://sparkpoint.io/privacy#page-section" title="Privacy Policy">Privacy Policy</a></span>, 
-                                 including our <span class="blue-80"><a href="https://sparkpoint.io/privacy#cookies" title="Cokkie use">Cookie use.</a></span></h5>
-                        </div>
-                        <div class="row btn-container">
+                        <h5 class="ml-1">By clicking Submit, you agree to our <span class="blue-80">Terms</span> and that you have read our <span class="blue-80">Privacy Policy</span>, including our <span class="blue-80">Cookie use.</span></h5>
+                        <div class="row btn-container mr-lg-1">
                             <div class="col-lg-12 col-4 p-0">
                                 <button class="col-lg-4 col-12 new-btn d-block">Submit</button>
                             </div>
