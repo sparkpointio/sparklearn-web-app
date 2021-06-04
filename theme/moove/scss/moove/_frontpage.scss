@@ -1145,3 +1145,7 @@ body.notloggedin {
   span.img-text:hover {
     color: #2caae1;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
