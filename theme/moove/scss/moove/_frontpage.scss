@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #frontpage-course-list,
 #frontpage-category-combo {
     h2 {
@@ -122,7 +126,7 @@
         background-color: #fff;
         background-attachment: fixed;
         background-size: cover;
-        min-height: 100vh !important;
+        min-height: 121vh !important;
     }
     
     #page-marketing {
@@ -811,6 +815,14 @@
     .frontpage-clients {
         padding-bottom: 2rem;
     }
+
+    .fixed-bottom {
+        // position: fixed;
+        // right: 0;
+        bottom: -7rem!important;
+        // left: 0;
+        // z-index: 1030;
+    }
 }
 
 #page-site-index {
@@ -1146,6 +1158,16 @@ body.notloggedin {
     color: #2caae1;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
+ @media (min-width:992px) {
+    
+    #loginbox {
+
+        #intro {
+            
+           
+            h2 {
+                font-size: 1.3rem!important;
+            }
+        }
+    }
+ }
