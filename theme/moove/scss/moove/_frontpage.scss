@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #frontpage-course-list,
 #frontpage-category-combo {
     h2 {
@@ -124,7 +128,7 @@
         background-attachment: fixed;
         background-size: cover;
         min-height: 830px !important;
-        height: 100vh;
+        height: 121vh;
 
         .section-link {
             z-index: 0;
@@ -824,6 +828,14 @@
     .frontpage-clients {
         padding-bottom: 2rem;
     }
+
+    .fixed-bottom {
+        // position: fixed;
+        // right: 0;
+        bottom: -7rem!important;
+        // left: 0;
+        // z-index: 1030;
+    }
 }
 
 #page-site-index {
@@ -1093,7 +1105,7 @@ body.notloggedin {
       width: 26px;
       font-size: 50px;
       cursor: pointer;
-      top: 173px !important;
+      top: 40% !important;
       transition: color .2s ease-in-out;
   }
 
@@ -1109,7 +1121,7 @@ body.notloggedin {
     width: 26px;
     font-size: 50px;
     cursor: pointer;
-    top: 205px !important;
+    top: 44% !important;
     transition: color .2s ease-in-out;
   }
 
@@ -1160,6 +1172,16 @@ body.notloggedin {
     color: #2caae1;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
+ @media (min-width:992px) {
+    
+    #loginbox {
+
+        #intro {
+            
+           
+            h2 {
+                font-size: 1.3rem!important;
+            }
+        }
+    }
+ }
