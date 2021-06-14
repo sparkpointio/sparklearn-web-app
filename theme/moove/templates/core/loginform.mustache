@@ -108,120 +108,88 @@
         <div class="alert alert-danger" role="alert">{{error}}</div>
     </div>
 {{/error}}
-
-<div class="card loginpanel">
-    <div class="card-block">
-        {{#cansignup}}
-            <div class="sr-only">
-                <a href="{{signupurl}}">{{#str}} tocreatenewaccount {{/str}}</a>
-            </div>
-        {{/cansignup}}
-
-        <div class="row">
-            <div class="col-md-7 instructions">
-                <h2>{{sitename}}</h2>
-                <hr align="left" />
-
-                <div class="m-t-1">
-                    <i class="fa fa-check-circle-o"></i>
-                    {{#str}} cookiesenabled {{/str}}
-                    {{{cookieshelpiconformatted}}}
-                </div>
-
-                {{#canloginasguest}}
-                    <div class="m-t-2">
-                        <p><i class="fa fa-user-circle-o"></i> {{#str}}someallowguest{{/str}}</p>
-                        <form action="{{loginurl}}" method="post" id="guestlogin">
-                            <input type = "hidden" name = "logintoken" value = "{{logintoken}}">
-                            <input type="hidden" name="username" value="guest" />
-                            <input type="hidden" name="password" value="guest" />   
-                            <input type="hidden" name="logintoken" value="{{logintoken}}">
-                            <button class="btn btn-secondary" type="submit">{{#str}}loginguest{{/str}}</button>
-                        </form>
-                    </div>
-                {{/canloginasguest}}
-
-                {{#hasidentityproviders}}
-                    <h3 class="m-t-1">{{#str}} potentialidps, auth {{/str}}</h3>
-                    <div class="potentialidplist" class="m-t-1">
-                        {{#identityproviders}}
-                            <div class="potentialidp">
-                                <a href="{{{url}}}" title={{#quote}}{{name}}{{/quote}} class="btn btn-secondary">
-                                    {{#iconurl}}
-                                        <img src="{{iconurl}}" alt="" width="24" height="24"/>
-                                    {{/iconurl}}
-                                    {{name}}
-                                </a>
-                            </div>
-                        {{/identityproviders}}
-                    </div>
-                {{/hasidentityproviders}}
-
-                {{^hasidentityproviders}}
-                    {{#hasinstructions}}
-                        <h3 class="m-t-1">{{#str}}firsttime{{/str}}</h3>
-                        <div>{{{instructions}}}</div>
-                    {{/hasinstructions}}
-                {{/hasidentityproviders}}
-            </div>
-
-            <div class="col-md-5 form">
-                <form action="{{loginurl}}" method="post" id="login">
-                    <input id="anchor" type="hidden" name="anchor" value="">
-                    <script>document.getElementById('anchor').value = location.hash;</script>
-                    <input type="hidden" name="logintoken" value="{{logintoken}}">
-
-                    <p class="welcome">{{#str}}login, theme_moove{{/str}}</p>
-                    <p class="welcome"><small>{{#str}}platform_access_subtext, theme_moove{{/str}}</small></p>
-
-                    <label for="username" class="sr-only">
-                        {{^canloginbyemail}}
-                            {{#str}} username {{/str}}
-                        {{/canloginbyemail}}
-                        {{#canloginbyemail}}
-                            {{#str}} usernameemail {{/str}}
-                        {{/canloginbyemail}}
-                    </label>
-                    <div class="input-group input-group-username">
-                        <span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                        <input type="text" name="username" id="username"
-                            class="form-control"
-                            value="{{username}}"
-                            placeholder={{#quote}}{{^canloginbyemail}}{{#str}}username{{/str}}{{/canloginbyemail}}{{#canloginbyemail}}{{#str}}usernameemail{{/str}}{{/canloginbyemail}}{{/quote}}>
-                    </div>
-
-                    <label for="password" class="sr-only">{{#str}} password {{/str}}</label>
-                    <div class="input-group input-group-password">
-                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="password" name="password" id="password" value=""
-                            class="form-control"
-                            placeholder={{#quote}}{{#str}}password{{/str}}{{/quote}}>
-                    </div>
-
-                    {{#rememberusername}}
-                        <div class="rememberpass m-t-1">
-                            <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
-                            <label for="rememberusername">{{#str}} rememberusername, admin {{/str}}</label>
-                        </div>
-                    {{/rememberusername}}
-
-                    <button type="submit" class="btn btn-primary btn-block" id="loginbtn">{{#str}}login{{/str}}</button>
-                </form>
-
-                <div class="forgetpass m-t-1">
-                    <p><a href="{{forgotpasswordurl}}">{{#str}}forgotten{{/str}}</a></p>
-                </div>
-
+<!-- Nav tabs -->
+<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Register</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="card loginpanel bg-transparent">
+            <div class="card-block">
                 {{#cansignup}}
-                    <form class="m-t-1" action="{{signupurl}}" method="get" id="signup">
-                        <button type="submit" class="btn btn-secondary">{{#str}}startsignup{{/str}}</button>
-                    </form>
+                    <div class="sr-only">
+                        <a href="{{signupurl}}">{{#str}} tocreatenewaccount {{/str}}</a>
+                    </div>
                 {{/cansignup}}
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <img src="http://learn.sparkpoint.test/theme/moove/pix/heroimage.png" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-5 form">
+                        <form action="{{loginurl}}" method="post" id="login">
+                            <input id="anchor" type="hidden" name="anchor" value="">
+                            <script>document.getElementById('anchor').value = location.hash;</script>
+                            <input type="hidden" name="logintoken" value="{{logintoken}}">
+
+                            <h1 class="welcome">Welcome back!</h1>
+                            <p><small>To continue, please login your SparkPoint account</small></p>
+
+                            <label for="username" class="sr-only">
+                                {{^canloginbyemail}}
+                                    {{#str}} username {{/str}}
+                                {{/canloginbyemail}}
+                                {{#canloginbyemail}}
+                                    {{#str}} usernameemail {{/str}}
+                                {{/canloginbyemail}}
+                            </label>
+                            <div class="input-group input-group-username mb-lg-3">
+                                {{! <span class="input-group-addon"><i class="fa fa-user-circle"></i></span> }}
+                                <input type="text" name="username" id="username"
+                                    class="form-control"
+                                    value="{{username}}"
+                                    placeholder={{#quote}}{{^canloginbyemail}}{{#str}}username{{/str}}{{/canloginbyemail}}{{#canloginbyemail}}{{#str}}usernameemail{{/str}}{{/canloginbyemail}}{{/quote}}>
+                            </div>
+
+                            <label for="password" class="sr-only">{{#str}} password {{/str}}</label>
+                            <div class="input-group input-group-password">
+                                {{! <span class="input-group-addon"><i class="fa fa-lock"></i></span> }}
+                                <input type="password" name="password" id="password" value=""
+                                    class="form-control"
+                                    placeholder={{#quote}}{{#str}}password{{/str}}{{/quote}}>
+                            </div>
+
+                            {{#rememberusername}}
+                                <div class="rememberpass m-t-1">
+                                    <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
+                                    <label for="rememberusername">{{#str}} rememberusername, admin {{/str}}</label>
+                                </div>
+                            {{/rememberusername}}
+
+                            <button type="submit" class="btn cus-prim-btn" id="loginbtn">{{#str}}login{{/str}}</button>
+                        </form>
+
+                        <div class="forgetpass m-t-1">
+                            <p><a href="{{forgotpasswordurl}}">{{#str}}forgotten{{/str}}</a></p>
+                        </div>
+
+                        {{#cansignup}}
+                            <form class="m-t-1" action="{{signupurl}}" method="get" id="signup">
+                                <button type="submit" class="btn btn-secondary">{{#str}}startsignup{{/str}}</button>
+                            </form>
+                        {{/cansignup}}
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>  
     </div>
-</div>
-</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
 </div>
 
 
@@ -245,7 +213,7 @@
         </div>
     </div>
     </div>
-    </div>
+    </>
     {{/hasinstructions}}
 {{/hasidentityproviders}}
 
