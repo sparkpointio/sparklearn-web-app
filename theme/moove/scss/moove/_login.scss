@@ -39,10 +39,6 @@
         border-radius: $m-login-padding;
         border: none;
 
-        #pills-home-tab {
-            border-radius: 20px;
-        }
-
         .card-block {
             padding: 0;
 
@@ -172,6 +168,26 @@
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         background-color: #fff;
         padding: 2rem !important;
+    }
+    .nav-tab-link {
+        background-color: rgb(139, 212, 255, 0.3);
+        border-radius: 6px;
+        transition: 2ms;
+        // box-shadow: 0 0 0 .2rem rgb(139, 212, 255, 0.3);
+    }
+    .nav-tab-link.active {
+        background-color: #1b5f86;
+        border-radius: 6px;
+        box-shadow: 0 0 0 .2rem rgb(139, 212, 255, 0.3);
+        transition: 2ms;
+        z-index: 20;
+    }
+
+    .nav-tab-link:focus {
+        border-color: #47a4da 75%;
+        -webkit-box-shadow: 0 0 0 0.2rem rgb(139, 212, 255, 0.5);
+        box-shadow: 0 0 0 .2rem rgb(139, 212, 255, 0.5);
+        transition: 2ms;
     }
 }
 
