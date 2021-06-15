@@ -188,12 +188,83 @@
                 </div>
             </div>
         </div>  
+        <div class="text-center m-t-1">
+            <p>Don't have an account yet? <a href="#pills-profile" data-toggle="pill" href="#pills-profile">Register</a></p>
+        </div>
     </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="card loginpanel bg-transparent">
+            <div class="card-block">
+                {{#cansignup}}
+                    <div class="sr-only">
+                        <a href="{{signupurl}}">{{#str}} tocreatenewaccount {{/str}}</a>
+                    </div>
+                {{/cansignup}}
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label for="inputEmail4">Firstname</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="inputPassword4">Lastname</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label for="inputEmail4">Mobile Number</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="inputPassword4">Email</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label for="inputEmail4">Password</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="inputPassword4">Confirm Password</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="">
+                                <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
+                                <label for="rememberusername">Yes, I want to receive updates from SparkPoint</label>
+                            </div>
+                            <div class="">
+                                <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
+                                <label for="rememberusername">I aggree to all <span class="blue-80">Term</span> and <span class="blue-80">Privacy Policy</span></label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn cus-prim-btn float-right">Create Account</button>
+                        </div>
+                    </div>
+                </form>
+                        
+
+                        {{#cansignup}}
+                            <form class="m-t-1" action="{{signupurl}}" method="get" id="signup">
+                                <button type="submit" class="btn btn-secondary  mt-lg-1">{{#str}}startsignup{{/str}}</button>
+                            </form>
+                        {{/cansignup}}
+                    </div>
+                </div>
+                <div class="text-center m-t-1">
+                    <p>Already have an account? <a href="#pills-home" data-toggle="pill" href="#pills-home">Login</a></p>
+                </div>
+            </div>
+        </div>  
+    </div>
 </div>
-<div class="text-center m-t-1">
-    <p>Don't have an account yet? <a href="#pills-profile" data-toggle="pill" href="#pills-profile">Register</a></p>
-</div>
+
 
 {{#hasidentityproviders}}
     {{#hasinstructions}}
