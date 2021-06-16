@@ -159,6 +159,12 @@
                 transition: .5s;
             }
         }
+
+        @media (max-width: 768px) {
+            .d-none-sm {
+                display: none!important;
+            }
+        }
     }
 
     .box.generalbox.boxaligncenter {
