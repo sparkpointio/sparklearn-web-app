@@ -158,7 +158,7 @@
                             </div>
 
                             <label for="password" class="sr-only">{{#str}} password {{/str}}</label>
-                            <div class="input-group input-group-password">
+                            <div class="input-group input-group-password mt-3">
                                 {{! <span class="input-group-addon"><i class="fa fa-lock"></i></span> }}
                                 <input type="password" name="password" id="password" value=""
                                     class="form-control"
@@ -166,16 +166,18 @@
                             </div>
 
                             {{#rememberusername}}
-                                <div class="rememberpass m-t-1">
+                                <div class="rememberpass m-t-1 text-left-lg">
                                     <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
                                     <label for="rememberusername">{{#str}} rememberusername, admin {{/str}}</label>
                                 </div>
                             {{/rememberusername}}
 
-                            <button type="submit" class="btn cus-prim-btn" id="loginbtn">{{#str}}login{{/str}}</button>
+                            <div class="text-left-lg">
+                                <button type="submit" class="btn cus-prim-btn" id="loginbtn">{{#str}}login{{/str}}</button>
+                            </div>
                         </form>
 
-                        <div class="forgetpass m-t-1">
+                        <div class="forgetpass m-t-1 text-left-lg">
                             <p><a href="{{forgotpasswordurl}}">{{#str}}forgotten{{/str}}</a></p>
                         </div>
 
@@ -233,7 +235,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-lg-6">
                             <div class="">
                                 <input type="checkbox" name="rememberusername" id="rememberusername" value="1" {{#username}}checked="checked"{{/username}} />
                                 <label for="rememberusername">Yes, I want to receive updates from SparkPoint</label>
@@ -243,8 +245,8 @@
                                 <label for="rememberusername">I aggree to all <span class="blue-80">Term</span> and <span class="blue-80">Privacy Policy</span></label>
                             </div>
                         </div>
-                        <div class="col">
-                            <button type="submit" class="btn cus-prim-btn float-right">Create Account</button>
+                        <div class="col-12 col-lg-6 text-center-sm">
+                            <button type="submit" class="btn cus-prim-btn">Create Account</button>
                         </div>
                     </div>
                 </form>
