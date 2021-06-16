@@ -160,9 +160,28 @@
             }
         }
 
+        .text-center-sm {
+            text-align: right;
+        } 
+
+        .text-left-lg {
+            text-align: left!important;
+        }
+
         @media (max-width: 768px) {
+            
             .d-none-sm {
                 display: none!important;
+            }
+
+            .text-center-sm {
+                text-align: center!important;
+            }
+            .cus-prim-btn {
+                text-align: center!important;
+            }
+            .text-left-lg {
+                text-align: center!important;
             }
         }
     }
