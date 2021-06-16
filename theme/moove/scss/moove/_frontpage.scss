@@ -322,6 +322,10 @@ html {
             display: inline-block;
             vertical-align: middle
           }
+
+          .mkt-hd {
+              width: 11rem;
+          }
     }
 
     .frontpage-endorsement {
@@ -1116,6 +1120,7 @@ body.notloggedin {
 
   .marketing-carousel.owl-carousel .nav-btn {
     color: #fff!important;
+    display: none;
     height: 77px;
     position: absolute;
     width: 26px;
