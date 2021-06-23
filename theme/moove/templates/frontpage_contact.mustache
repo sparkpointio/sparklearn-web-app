@@ -25,24 +25,24 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 px-5 py-3">
                     <h4>Connect With Us</h4>
-                    <form>
+                    <form action="/mailjet/mailjet.php" method="post">
                         <div class="row">
                             <div class="col-12 col-sm-6 my-1"> 
-                                <input type="text" placeholder="Name (Optional)">
+                                <input type="text" placeholder="Name (Optional)" name="fullname">
                             </div>
                             {{! <div class="col-sm-1"></div> }}
                             <div class="col-12 col-sm-6 my-1">
-                                <input type="email" placeholder="Email Address (Required)">
+                                <input type="email" placeholder="Email Address (Required)" name="email">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 my-1">
-                                <textarea type="textarea" placeholder="Write your message here"></textarea>
+                                <input type="text" placeholder="Write your message here" name="message">
                             </div>
                         </div>
                         <div class="row btn-container mr-lg-1">
                             <div class="col-lg-12 col-4 p-0">
-                                <button class="col-lg-4 col-12 new-btn d-block">Send</button>
+                                <button class="col-lg-4 col-12 new-btn d-block" type="submit">Send</button>
                             </div>
                         </div>
                     </form>
