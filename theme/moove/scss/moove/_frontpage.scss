@@ -127,12 +127,7 @@ html {
         background-color: #fff;
         background-attachment: fixed;
         background-size: cover;
-        min-height: 830px !important;
-        height: 121vh;
-
-        .section-link {
-            z-index: 0;
-        }
+        min-height: 134vh !important;
     }
     
     #page-marketing {
@@ -224,6 +219,44 @@ html {
         transition: .5s;
     }
 
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .box span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        border-right: 3px solid rgb(0, 0, 0);
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+
+    .box span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+    .box span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+    
+    @keyframes animate {
+        0%{
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px,-20px);
+        }
+        50%{
+            opacity: 1;
+        } 
+        100%{
+            opacity: 0;
+            transform: rotate(45deg) translate(20px,20px);
+        }     
+    }
     .arrow-icon {
         margin-top: 20px;
         // animation: Pulsate 2s linear infinite;
@@ -333,7 +366,7 @@ html {
         background-size: cover !important;
         // margin: -4rem 0 0 0;
         padding: 2rem 0;
-        // height: 40rem;
+        height: 109vh !important;
 
         .endorsement-header {
             // margin-left: 9rem;
@@ -1134,6 +1167,12 @@ body.notloggedin {
     color:#39beec!important;
     transition: color .2s ease-in-out;
   } 
+
+  @media (max-width: 991px) {
+      .marketing-carousel.owl-carousel .nav-btn {
+          display: block;
+      }
+  }
 
   .owl-carousel .owl-prev.disabled,
   .owl-carousel .owl-next.disabled{
