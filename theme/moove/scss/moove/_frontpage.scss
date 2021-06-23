@@ -559,6 +559,31 @@ html {
             transition: .5s;
         }
 
+        .cus-form-control i {
+            position: absolute;
+            top: 11px;
+            right: 26px;
+            visibility: hidden;
+        }
+
+        .cus-form-control.success input {
+            border-color: #87d2ff;
+        }
+
+        .cus-form-control.error input {
+            border-color: red;
+        }
+
+        .cus-form-control.success i.fa.fa-check {
+            visibility: visible;
+            color: #87d2ff;
+        }
+
+        .cus-form-control.error i.fa.fa-times {
+            visibility: visible;
+            color: red;
+        }
+
     }
 
     .frontpage-social-icons {
