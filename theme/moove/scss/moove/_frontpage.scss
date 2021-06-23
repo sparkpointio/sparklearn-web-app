@@ -1159,6 +1159,12 @@ body.notloggedin {
     transition: color .2s ease-in-out;
   } 
 
+  @media (max-width: 991px) {
+      .marketing-carousel.owl-carousel .nav-btn {
+          display: block;
+      }
+  }
+
   .owl-carousel .owl-prev.disabled,
   .owl-carousel .owl-next.disabled{
     pointer-events: none;
