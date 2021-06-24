@@ -10,13 +10,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = $_POST['message'];
     $params = array(
         'method' => 'POST',
-        'from' => 'loboysalvadora.26@gmail.com',
-        'to' => 'christianrosales.salvadora@bicol-u.edu.ph',
+        'from' => 'c.salvadora@sparkpoint.io',
+        'to' => 'bootcamp@sparkpoint.io',
         'subject' => 'Connect with Us',
         'text' => "Fullname: $name\r\nEmail: $email\r\nMessage: $message"
     );
     
     $result = $mj->sendEmail($params);
+}else{
+    echo('error');
 }
 header('Location: '.$CFG->wwwroot);
 ?>
