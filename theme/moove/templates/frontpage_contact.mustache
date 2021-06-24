@@ -36,8 +36,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 my-1">
-                                <textarea type="textarea" placeholder="Write your message here"></textarea>
+                            <div id="textAreaFormControl" class="cus-form-control col-12 my-1">
+                                <textarea type="textarea" id="messageId" placeholder="Write your message here"></textarea>
                             </div>
                         </div>
                         <div class="row btn-container mr-lg-1">
@@ -60,9 +60,13 @@
 
 const form = document.getElementById('contactUs');
 const email = document.getElementById('emailId');
+const message = document.getElementById('messageId');
 const formControl = document.getElementById('formControl');
+const textAreaFormControl = document.getElementById('textAreaFormControl');
 formControl.classList.remove("error");
 formControl.classList.remove("success");
+emailStatus = false;
+validMessage = false;
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -74,19 +78,37 @@ function checkInputs() {
 	// trim to remove the whitespaces
 	const emailValue = email.value.trim();
 
-    if(emailValue === '') {
+    if(emailValue === '' ) {
         formControl.classList.remove("success");
         formControl.classList.add("error");
-        return false;
+        emailStatus = false;
     } else if (!validEmail(emailValue)) {
         formControl.classList.remove("success");
         formControl.classList.add("error");
-        return false;
+        emailStatus = false;
+
 	} else {
 		formControl.classList.remove("error");
 		formControl.classList.add("success");
+        emailStatus = true;
+    }
+
+    if(message.value.length == 0) {
+        textAreaFormControl.classList.remove("success");
+        textAreaFormControl.classList.add("error");
+        validMessage = false;
+
+	} else {
+		textAreaFormControl.classList.remove("error");
+		textAreaFormControl.classList.add("success");
+        validMessage = true;
+    }
+
+    if(emailStatus && validMessage){
         form.submit();
     }
+
+
 }
 
 function validEmail(email) {
