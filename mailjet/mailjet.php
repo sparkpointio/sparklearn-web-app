@@ -13,10 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'from' => 'loboysalvadora.26@gmail.com',
         'to' => 'christianrosales.salvadora@bicol-u.edu.ph',
         'subject' => 'Connect with Us',
-        'text' => 'Fullname: '.$name.'\r\nEmail: '.$email.'\r\n'.$message
+        'text' => "Fullname: $name\r\nEmail: $email\r\nMessage: $message"
     );
     
     $result = $mj->sendEmail($params);
-    // header('Location: '.$CFG->wwwroot);
 }
+header('Location: '.$CFG->wwwroot);
 ?>
