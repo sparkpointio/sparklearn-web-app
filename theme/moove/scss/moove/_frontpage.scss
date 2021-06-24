@@ -574,6 +574,14 @@ html {
             border-color: red;
         }
 
+        .cus-form-control.success textarea {
+            border-color: #87d2ff;
+        }
+
+        .cus-form-control.error textarea {
+            border-color: red;
+        }
+
         .cus-form-control.success i.fa.fa-check {
             visibility: visible;
             color: #87d2ff;
