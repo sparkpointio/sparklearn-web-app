@@ -219,6 +219,10 @@ nav.navbar {
             color:white!important;
             // padding: 14px;
             transition: .5s;
+
+            .nav-link{
+                display: inline !important;
+            }
         }
     }
     
@@ -267,7 +271,7 @@ nav.navbar {
             }
 
             .nav-link {
-                padding: 0;
+                padding: 8px;
             }
 
             .dropdown-menu {
