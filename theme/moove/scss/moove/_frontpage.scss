@@ -963,9 +963,13 @@ body.notloggedin {
             border: 1px solid $brand-primary;
         }
         
-        @media (max-width: 992px){
-            display: block !important;
-        }
+        // @media (max-width: 992px){
+        //     display: block !important;
+        // }
+    }
+    
+    .btn-login-mobile {
+        display: block !important;
     }
 
     #loginbox {
