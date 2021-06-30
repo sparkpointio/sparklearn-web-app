@@ -104,6 +104,10 @@ html {
         display: block !important;
     }
 
+    .zindex-0 {
+        z-index: 0;
+    }
+
     #mooveslideshow {
         margin: 0;
     }
@@ -221,6 +225,10 @@ html {
         background-color: #f8981d;
         box-shadow: 0 0 8px #e15309;
         transition: .5s;
+    }
+
+    .marketing-card {
+        min-width: 300px;
     }
 
     .box {
@@ -540,11 +548,6 @@ html {
             display: inline-block;
         }
 
-        .btn-container {
-            @media(max-width: 1000px){
-                justify-content: center;
-            }
-        }
 
         .new-btn {
             color: #fff;
@@ -556,6 +559,7 @@ html {
             text-decoration: none;
             box-shadow: 0 0 8px #e15309;
             border: none;
+            min-width: 230px;
 
             @media(min-width: 992px){
                 float: right;
