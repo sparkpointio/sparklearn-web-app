@@ -161,11 +161,13 @@ Sparklearn
 
 .course-card {
     border-color: #fff;
-    margin: 10px 0 10px 0;
-    @media (max-width: 1200px) {
-        min-width: 100%;
-        height: 100px;
-    }
+    margin: 10px;
+    height: 150px;
+    width: 250px;
+    // @media (max-width: 1200px) {
+    //     min-width: 100%;
+    //     height: 100px;
+    // }
 }
 
 .course-card-background {
