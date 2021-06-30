@@ -804,7 +804,7 @@ html {
     .frontpage-maincontent {
         padding-top: 2rem;
         padding-bottom: 2rem;
-        height: 24rem;
+        // height: 24rem; don't define static height, responsiveness issue
 
         h4 {
             color: #20668e;
@@ -957,8 +957,15 @@ body.notloggedin {
         -moz-border-radius: 20px;
         border-radius: 20px;
         color: $brand-primary;
-        border: 1px solid $brand-primary;
         cursor: pointer;
+        
+        @media (min-width: 992px){
+            border: 1px solid $brand-primary;
+        }
+        
+        @media (max-width: 992px){
+            display: block !important;
+        }
     }
 
     #loginbox {

@@ -80,15 +80,15 @@
                     {{/is_section}}
                     <span class="text">{{{text}}}</span>
                 </a>
-                    {{#children}}
-                        {{^is_section}}
-                            <div class="dropdown-menu">
-                                    <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
-                                        <span class="text">{{{text}}}</span>
-                                    </a>
-                            </div>
-                        {{/is_section}}
-                    {{/children}}
+                    <div class="dropdown-menu">
+                        {{#children}}
+                            {{^is_section}}
+                                <a class="dropdown-item {{#isactive}}active font-weight-bold{{/isactive}}" href="{{{action}}}">
+                                    <span class="text">{{{text}}}</span>
+                                </a>
+                            {{/is_section}}
+                        {{/children}}
+                    </div>
             </li>
     {{/action}}
 {{/ flatnavigation }}

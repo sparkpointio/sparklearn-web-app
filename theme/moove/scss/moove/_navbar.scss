@@ -99,9 +99,9 @@
     float:none
   }
   
-//   .dropdown:hover .dropdown-menu {
-//     display: block;
-//   }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
 nav.navbar {
     min-height: $navbar-height;
