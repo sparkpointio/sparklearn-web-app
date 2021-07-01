@@ -5,7 +5,7 @@
     padding: 12px;
     display: inline-block;
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    transition: all 0.8s ease-in;
     padding-top: 8px;
     line-height: 8px;
     text-align: right;
@@ -13,7 +13,7 @@
     left: 0;
     top: 0;
     z-index: 201;
-    margin: 10px 20px;
+    margin: 0px 20px;
 }
 .nav-sw-toggle:hover{
     background: #e15309;
@@ -99,9 +99,9 @@
     float:none
   }
   
-//   .dropdown:hover .dropdown-menu {
-//     display: block;
-//   }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
 nav.navbar {
     min-height: $navbar-height;
@@ -112,7 +112,8 @@ nav.navbar {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2000;
+    z-index: 1030;
+    justify-content: normal;
 
     .drawer-toggle {
         height: 70px;
@@ -216,8 +217,12 @@ nav.navbar {
     
         .nav-item {
             color:white!important;
-            padding: 14px;
+            // padding: 14px;
             transition: .5s;
+
+            .nav-link{
+                display: inline !important;
+            }
         }
     }
     
@@ -232,14 +237,15 @@ nav.navbar {
                 color: #585757;
                 font-weight: 900;
                 transition: .5s;
+                padding: 8px;
             }
 
             a:hover {
                 color: #fff;
-                padding: 8px 19px 8px 19px;
+                // padding: 8px 19px 8px 19px;
                 background-color: #e66d2c;
                 transition: .5s;
-                border-radius: 4px;
+                border-radius: 10px;
                 text-decoration: none;
                 box-shadow: 0 0 8px #e15309;
             }
@@ -265,7 +271,7 @@ nav.navbar {
             }
 
             .nav-link {
-                padding: 0;
+                padding: 8px;
             }
 
             .dropdown-menu {

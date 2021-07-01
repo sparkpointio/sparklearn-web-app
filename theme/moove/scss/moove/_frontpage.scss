@@ -98,6 +98,15 @@ html {
 
 #page-site-index.notloggedin {
     margin-left: 0;
+    overflow-x: hidden;
+
+    .custom-menu{
+        display: block !important;
+    }
+
+    .zindex-0 {
+        z-index: 0;
+    }
 
     #mooveslideshow {
         margin: 0;
@@ -218,6 +227,10 @@ html {
         transition: .5s;
     }
 
+    .marketing-card {
+        min-width: 300px;
+    }
+
     .box {
         position: absolute;
         top: 50%;
@@ -274,6 +287,12 @@ html {
         padding: 2rem 0;
         // height: 40rem;
 
+        .owl-item {
+            h2 {
+                color: #B3E3FF;
+            }
+        }
+
         .card {
             // position: absolute;
             flex-basis: calc(30% - 1rem);
@@ -319,23 +338,24 @@ html {
             }
         }
 
-        .marketing-item-title {
-            h2{
-                color:#9ecce7;
-            }
-        }
-
+        
         .marketing-item {
             padding: 0px;
-
+            
             img {
                 border-radius: 15px;
             }
-
+            
             .bottom-sticky {
                 position: sticky;
                 margin-top: 23.5rem!important;
                 margin-right: 1.1rem;
+            }
+        }
+
+        .marketing-item-title {
+            h2{
+                color:#9ecce7;
             }
         }
         
@@ -528,11 +548,6 @@ html {
             display: inline-block;
         }
 
-        .btn-container {
-            @media(max-width: 1000px){
-                justify-content: center;
-            }
-        }
 
         .new-btn {
             color: #fff;
@@ -544,6 +559,7 @@ html {
             text-decoration: none;
             box-shadow: 0 0 8px #e15309;
             border: none;
+            min-width: 230px;
 
             @media(min-width: 992px){
                 float: right;
@@ -792,7 +808,7 @@ html {
     .frontpage-maincontent {
         padding-top: 2rem;
         padding-bottom: 2rem;
-        height: 24rem;
+        // height: 24rem; don't define static height, responsiveness issue
 
         h4 {
             color: #20668e;
@@ -945,13 +961,25 @@ body.notloggedin {
         -moz-border-radius: 20px;
         border-radius: 20px;
         color: $brand-primary;
-        border: 1px solid $brand-primary;
         cursor: pointer;
+        
+        @media (min-width: 992px){
+            border: 1px solid $brand-primary;
+        }
+        
+        // @media (max-width: 992px){
+        //     display: block !important;
+        // }
+    }
+    
+    .btn-login-mobile {
+        display: block !important;
     }
 
     #loginbox {
         opacity: 0.94;
         margin-bottom: 3rem;
+        height: 75%;
 
         &.dropdown-menu {
             top: 70px !important;
@@ -1102,7 +1130,7 @@ body.notloggedin {
                 margin-bottom: .25rem;
                 flex-basis: calc(34% - 5rem);
                 text-align: center;
-                margin: 0px 2.1rem;
+                // margin: 0px 2.1rem;
                 &:last-of-type {
                     margin-bottom: 0;
                 }
@@ -1206,11 +1234,11 @@ body.notloggedin {
   }
 
   .owl-carousel .prev-slide{
-      background: url(nav-icon.png) no-repeat scroll 0 0;
+    //   background: url(nav-icon.png) no-repeat scroll 0 0;
       left: -55px;
   }
   .owl-carousel .next-slide{
-      background: url(nav-icon.png) no-repeat scroll -24px 0px;
+    //   background: url(nav-icon.png) no-repeat scroll -24px 0px;
       right: -50px;
   }
   .owl-carousel .prev-slide:hover{

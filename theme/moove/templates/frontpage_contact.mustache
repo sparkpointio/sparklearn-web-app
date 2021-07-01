@@ -25,24 +25,24 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 px-5 py-3">
                     <h4>Connect With Us</h4>
-                    <form id="contactUs">
+                    <form id="contactUs" action="/mailjet/mailjet.php" method="post">
                         <div class="row">
                             <div class="cus-form-control col-12 col-sm-6 my-1"> 
-                                <input type="text" placeholder="Name (Optional)"><span class="float-left" id="status"><i class="fa fa-check"></i><i class="fa fa-times"></i></span>
+                                <input type="text" placeholder="Name (Optional)" name="fullname"><span class="float-left" id="status"><i class="fa fa-check"></i><i class="fa fa-times"></i></span>
                             </div>
                             {{! <div class="col-sm-1"></div> }}
                             <div id="formControl" class="cus-form-control col-12 col-sm-6 my-1">
-                                <input id="emailId" type="email" placeholder="Email Address (Required)"> <span class="float-left" id="statusTwo"><i class="fa fa-check"></i><i class="fa fa-times"></i></span>
+                                <input id="emailId" type="email" placeholder="Email Address (Required)" name="email"> <span class="float-left" id="statusTwo"><i class="fa fa-check"></i><i class="fa fa-times"></i></span>
                             </div>
                         </div>
                         <div class="row">
                             <div id="textAreaFormControl" class="cus-form-control col-12 my-1">
-                                <textarea type="textarea" id="messageId" placeholder="Write your message here"></textarea>
+                                <textarea type="textarea" id="messageId" placeholder="Write your message here" name="message"></textarea>
                             </div>
                         </div>
-                        <div class="row btn-container mr-lg-1">
-                            <div class="col-lg-12 col-4 p-0">
-                                <button class="col-lg-4 col-12 new-btn d-block">Send</button>
+                        <div class="row d-flex flex-row-reverse mr-lg-1">
+                            <div class="pr-3 pl-4 p-lg-0">
+                                <button class="col-lg-4 col-12 new-btn d-block" type="submit">Send</button>
                             </div>
                         </div>
                     </form>
