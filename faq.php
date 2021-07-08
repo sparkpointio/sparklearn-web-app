@@ -3,12 +3,12 @@
 require_once('config.php');
 
 $PAGE->set_context(get_system_context());
-$PAGE->set_pagelayout('admin');
-$PAGE->set_title("Your title");
-$PAGE->set_heading("Blank page");
-$PAGE->set_url($CFG->wwwroot.'/blank_page.php');
+$PAGE->set_pagelayout('faq');
+$PAGE->set_title("FAQs");
+$PAGE->set_heading("Frequently Asked Question");
+$PAGE->set_url($CFG->wwwroot.'/faq.php');
 
 echo $OUTPUT->header();
-echo "Hello World";
+
 echo $OUTPUT->footer();
 ?>
