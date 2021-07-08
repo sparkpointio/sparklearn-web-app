@@ -201,7 +201,8 @@ $THEME->layouts = [
     // The faq page
     'faq' => array(
         'file' => 'faq.php',
-        'regions' => array(),
-        'options' => array('langmenu' => true),
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true),
     )
 ];

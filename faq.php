@@ -9,6 +9,6 @@ $PAGE->set_heading("Frequently Asked Question");
 $PAGE->set_url($CFG->wwwroot.'/faq.php');
 
 echo $OUTPUT->header();
-echo "Hello World";
+
 echo $OUTPUT->footer();
 ?>
