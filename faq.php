@@ -7,6 +7,10 @@ require_once('config.php');
 // $PAGE->set_title("FAQs");
 // $PAGE->set_heading("Frequently Asked Question");
 $PAGE->set_url($CFG->wwwroot.'/faq.php');
+echo $OUTPUT->header();
+
+
+echo $OUTPUT->footer();
 
 $templatecontext = [
    
@@ -17,7 +21,6 @@ $templatecontext = [
     'thirdguideimage' => $OUTPUT->image_url('thirdguideimage', 'theme'),
 ];
 echo $OUTPUT->render_from_template('theme_moove/faq',$templatecontext);
-echo $OUTPUT->header();
+// echo $OUTPUT->header();
 
-echo $OUTPUT->footer();
 ?>
