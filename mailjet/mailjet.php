@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = $_POST['message'];
     $params = array(
         'method' => 'POST',
-        'from' => 'c.salvadora@sparkpoint.io',
+        'from' => 'no-reply@sparkpoint.io',
         'to' => 'bootcamp@sparkpoint.io',
         'subject' => 'Connect with Us',
         'text' => "Fullname: $name\r\nEmail: $email\r\nMessage: $message"
