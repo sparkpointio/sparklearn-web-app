@@ -1282,3 +1282,76 @@ body.notloggedin {
         }
     }
  }
+
+ .frontpage-custom-footer {
+    color: #fff!important;
+    background-color: #00273e!important;
+    padding: 2rem 0;
+    // height: 22rem;
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: .5rem;
+    }
+    ul {
+        padding-left: 0rem;
+        list-style: none;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .footer-divider {
+        @media(max-width:992px){
+            text-align: center;
+        }
+    }
+
+    .footer-header {
+        margin-left: 9rem;
+        margin-right: 9rem;
+
+        h4 {
+            color:#fff;
+        }
+
+        h2 {
+            color: #38bbe8;
+        }
+    }      
+
+    .footer-logo {
+        
+        h5 {
+            font-size: .8rem;
+            color: #fff;
+            margin-bottom: 0rem;
+        }
+
+        h6 {
+            font-size: .625rem;
+            color: #fff;
+        }
+
+        p, a {
+            color: #fff;
+            font-size: .7rem;
+            text-decoration: none;
+        }
+    }
+
+    .address p {
+        color: #fff;
+        font-size: .8rem!important;
+    }
+    .fa-2x {
+        font-size: 1em!important;
+    }
+
+}
