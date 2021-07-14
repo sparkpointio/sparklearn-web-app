@@ -10286,6 +10286,18 @@ function get_course_display_name_for_list($course) {
     }
 }
 
+function get_course_display_shortname_for_list($course) {
+    global $CFG;
+    if (!empty($CFG->courselistshortnames)) {
+        if (!($course instanceof stdClass)) {
+            $course = (object)convert_to_array($course);
+        }
+        return get_string('courseextendednamedisplay', '', $course);
+    } else {
+        return $course->shortname;
+    }
+}
+
 /**
  * Safe analogue of unserialize() that can only parse arrays
  *
