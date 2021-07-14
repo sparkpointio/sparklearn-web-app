@@ -63,14 +63,17 @@
 
             {{^sliderenabled}}
                 <div class="row ml-md-5 pl-md-5 mx-2 mb-0" id="loginbox">
-                    <div class="col-sm-12 hidden-sm-down ml-lg-5 pl-lg-5 pt-lg-5 {{#disablefrontpageloginbox}}col-md-12{{/disablefrontpageloginbox}}{{^disablefrontpageloginbox}}col-md-7{{/disablefrontpageloginbox}}" id="intro">
+                    <div class="col-lg-6 col-sm-12 hidden-sm-down ml-lg-5 pl-lg-5 pt-lg-5 {{#disablefrontpageloginbox}}col-md-12{{/disablefrontpageloginbox}}{{^disablefrontpageloginbox}}col-md-7{{/disablefrontpageloginbox}}" id="intro">
                             
                         {{#bannercontent}}
                             <h1 class="mt-md-3 pt-lg-2 banner-text">Welcome to</h1>
                             <img class="col-12 col-sm-7 p-0" src="{{{subheader}}}">
-                            <h2  class="col-12 col-md-6 p-0 my-lg-3 banner-subtext">{{{ bannercontent }}}</h2>
+                            <h2  class="col-12 p-0 my-lg-3 banner-subtext">{{{ bannercontent }}}</h2>
                             <a href="https://earn.sparkpoint.io/register" target="_blank"><button class="my-5 primary-btn">Register Now</button></a>
                         {{/bannercontent}}
+                    </div>
+                    <div class="col-lg-4 col-sm-12 pt-lg-5 mt-lg-5 hero-image-div">
+                        <img class="hero-image" src='/theme/moove/pix/heroimage.png' alt="hero-image">
                     </div>
                 </div> <!-- end of #boxForm -->
             {{/sliderenabled}}
