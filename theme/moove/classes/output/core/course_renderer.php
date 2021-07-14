@@ -317,7 +317,7 @@ class course_renderer extends \core_course_renderer {
     protected function course_card_body(coursecat_helper $chelper, core_course_list_element $course, $coursenamelink) {
 
         // $content = html_writer::start_tag('div', ['class' => 'course-card-background']);
-        $content = html_writer::start_tag('div', ['class' => 'course-card-body']);
+        $content = html_writer::start_tag('div', ['class' => 'col-12 p-0 course-card-body']);
 
         // $content .= $this->course_category_name($chelper, $course);
         $content .= html_writer::tag('h4', $coursenamelink, ['class' => 'course-card-title']);

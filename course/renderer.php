@@ -2781,7 +2781,7 @@ class coursecat_helper {
         if (!isset($options['context'])) {
             $options['context'] = context_course::instance($course->id);
         }
-        $name = format_string(get_course_display_name_for_list($course), true, $options);
+        $name = format_string(get_course_display_shortname_for_list($course), true, $options);
         if (!empty($this->searchcriteria['search'])) {
             $name = highlight($this->searchcriteria['search'], $name);
         }
