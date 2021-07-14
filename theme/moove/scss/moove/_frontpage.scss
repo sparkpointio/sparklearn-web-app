@@ -291,16 +291,18 @@ html {
         .hero-image-div{
             
             @media (max-width: 990px){
-                margin-top: -140px;
+                margin-top: -70px;
                 max-height: 340px;
             }
             
             .hero-image{
-                height: 100%;
+                width: auto;
+                max-width: 100%;
+                max-height: inherit;
                 float: right;
-                @media (min-width: 990px){
-                    height: 80%;
-                }
+                // @media (min-width: 990px){
+                //     width: 80%;
+                // }
             }
         }
 
@@ -942,6 +944,9 @@ html {
         bottom: -7rem!important;
         // left: 0;
         // z-index: 1030;
+        @media (max-width: 760px){
+            bottom: -12rem!important;
+        }
     }
 }
 
